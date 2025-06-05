@@ -1,255 +1,301 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-	<meta charset="utf-8">
-	<title>9° ANO</title>
-	<style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>9° ANO</title>
+  <style>
 
-		html {
-			scroll-behavior: smooth;
-		}
+    html {
+      scroll-behavior: smooth;
+    }
 
-		body {
-			font-family: monospace;
-			margin: 5px;
-			font-size: 15px;
-		}
+    body {
+      font-family: monospace;
+      margin: 0;
+      padding: 20px;
+    }
 
-		h1 {
-			text-align: center;
-			font-size: 2.5em;
-			color: #FFB82E;
-		}
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
 
-		h2 {
-			padding: 10px;
-		}
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      color: #FFB82E;
+    }
 
-		ol {
-			width: 50%;
-			margin-right: auto;
-			margin-left: auto;
-			margin-top: 50px;
-			margin-bottom: 50px;
-		}
+    #subtitulo {
+      color: gray;
+      text-align: center;
+      margin-bottom: 30px;
+    }
 
-		#go_back { 
-			text-align: center;
-			background-color: #FFB82E;
-			width: 50%;
-			margin-left: auto;
-			margin-right: auto;
-			padding: 10px;
-			border-radius: 20px;
-		}
+    i {
+      color: rgb(80, 80, 80);
+    }
 
-		#subtitulo {
-			color: gray;
-			text-align: center;
-		}
+    ol {
+      width: 90%;
+      max-width: 500px;
+      margin: 30px auto;
+      padding-left: 20px;
+    }
 
-		i {
-			color: rgb(80, 80, 80);
-		}
+    ol li {
+      margin: 10px 0;
+    }
 
-		td {
-			border: 1px black solid;
-			padding: 8px;
-			border-radius: 20px;
-			text-align: center;
-		}
+    h2 {
+      padding: 10px;
+      text-align: center;
+    }
 
-		th {
-			border: 1px black solid;
-			font-weight: bold;
-			padding: 8px;
-			border-radius: 20px;
-		}
+    table {
+      border-collapse: collapse;
+      border: 1px solid black;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 100%;
+    }
 
-		table {
-			border-collapse: collapse;
-			border: 1px black solid;
-			border-radius: 50px;
-			margin-right: auto;
-			margin-left: auto;
-			width: 75%;
-		}
+    th, td {
+      border: 1px solid black;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+    }
 
-		div {
-			width: 80%;
-			margin-left: auto;
-			margin-right: auto;
-		}
+    table a {
+      text-decoration: underline;
+      color: #1C2F3F;
+    }
 
-		.one {
-			background-color: #F9E270;
-		}
+    table a:hover {
+      text-decoration: underline;
+      font-style: italic;
+      font-weight: bold;
+    }
 
-		.two {
-			background-color: #FFB82E;
-		}
+    div.section {
+      width: 90%;
+      margin: 40px auto;
+      padding: 10px;
+      border-radius: 10px;
+    }
 
-		.three {
-			background-color: #A3D5F7;
-		}
+    .one {
+      background-color: #F9E270;
+    }
 
-		footer {
-			text-align: right;
-			margin-top: 10px;
-			padding: 5px;
-			font-size: 10px;
-		}
+    .two {
+      background-color: #FFB82E;
+    }
 
-	</style>
+    .three {
+      background-color: #A3D5F7;
+    }
+
+    #go_back {
+      text-align: center;
+      background-color: #FFB82E;
+      width: 80%;
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 15px;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+
+    #go_back a {
+      text-decoration: none;
+      color: #1C2F3F;
+    }
+
+    #go_back a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.75em;
+      margin-top: 50px;
+      padding: 20px;
+      color: #555;
+    }
+
+    footer a {
+      color: #1C2F3F;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      h2 {
+        font-size: 1.2em;
+      }
+
+      th, td {
+        font-size: 0.9em;
+        padding: 8px;
+      }
+
+      ol {
+        font-size: 1em;
+      }
+    }
+
+  </style>
 </head>
 <body>
 
-	<h1>9° ANO</h1>
+<div class="container">
 
-	<h4 id="subtitulo">Essa é a página geral do 9° ano do <i>Gepeto</i>! Procure aqui abaixo a matéria e o assunto do <i>resumo</i> que você precisa. <i>Sinta-se à vontade</i>.</h4>
+    <h1>9° ANO</h1>
 
-	<ol>
-		<li><a href="#math">Matemática</a></li>
-		<li><a href="#port">Português</a></li>
-		<li><a href="#hist">História</a></li>
-		<li><a href="#cien">Ciências</a></li>
-		<li><a href="#geo">Geografia</a></li>
-		<li><a href="#gphy">Geography</a></li>
-	</ol>
+    <h4 id="subtitulo">
+      Essa é a página geral do 9° ano do <i>Gepeto</i>! Procure aqui abaixo a matéria e o assunto do <i>resumo</i> que você precisa. <i>Sinta-se à vontade</i>.
+    </h4>
 
-<div class="one" id="math">
-	<h2>Matemática (Álgebra e Geometria):</h2>
+    <ol>
+      <li><a href="#math">Matemática</a></li>
+      <li><a href="#port">Português</a></li>
+      <li><a href="#hist">História</a></li>
+      <li><a href="#cien">Ciências</a></li>
+      <li><a href="#geo">Geografia</a></li>
+      <li><a href="#gphy">Geography</a></li>
+    </ol>
 
-	<table>
-		<thead>
-			<tr>
-				<th>ANO EM QUE FOI FEITO</th>
-				<th>COLÉGIO DO AUTOR</th>
-				<th>ASSUNTO</th>
-				<th>AUTOR</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-			</tr>
-		</tbody>
-	</table>
+    <div class="section one" id="math">
+      <h2>Matemática (Álgebra e Geometria):</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ANO EM QUE FOI FEITO</th>
+            <th>COLÉGIO DO AUTOR</th>
+            <th>ASSUNTO</th>
+            <th>AUTOR</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section two" id="port">
+      <h2>Português:</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ANO EM QUE FOI FEITO</th>
+            <th>COLÉGIO DO AUTOR</th>
+            <th>ASSUNTO</th>
+            <th>AUTOR</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section three" id="hist">
+      <h2>História (Geral e Brasil):</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ANO EM QUE FOI FEITO</th>
+            <th>COLÉGIO DO AUTOR</th>
+            <th>ASSUNTO</th>
+            <th>AUTOR</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section one" id="cien">
+      <h2>Ciências (Química e Física):</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ANO EM QUE FOI FEITO</th>
+            <th>COLÉGIO DO AUTOR</th>
+            <th>ASSUNTO</th>
+            <th>AUTOR</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section two" id="geo">
+      <h2>Geografia:</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ANO EM QUE FOI FEITO</th>
+            <th>COLÉGIO DO AUTOR</th>
+            <th>ASSUNTO</th>
+            <th>AUTOR</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2025</td>
+            <td>CSA</td>
+            <td><a href="economia_e_industria_da_europa.html">Economia e Indústria da Europa</a></td>
+            <td>UvaVerde</td>
+          </tr>
+          <tr>
+            <td>2025</td>
+            <td>CSA</td>
+            <td><a href="uniao_europeia.html">União Europeia - visão geral</a></td>
+            <td>UvaVerde</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section three" id="gphy">
+      <h2>Geography:</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ANO EM QUE FOI FEITO</th>
+            <th>COLÉGIO DO AUTOR</th>
+            <th>ASSUNTO</th>
+            <th>AUTOR</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p id="go_back"><a href="index.html">VOLTAR À PÁGINA INICIAL</a></p>
+
+    <footer>
+      <p>Página escrita e programada pela UvaVerde, outrora conhecido como Bentorg.</p>
+      <p>Para mais criações pelo autor desta página, visite <a target="_blank" href="https://bentorg.github.io/PongSolo/">Pong Solo</a>.</p>
+    </footer>
+
 </div>
-
-<div class="two" id="port">
-	<h2>Português:</h2>
-
-	<table>
-		<thead>
-			<tr>
-				<th>ANO EM QUE FOI FEITO</th>
-				<th>COLÉGIO DO AUTOR</th>
-				<th>ASSUNTO</th>
-				<th>AUTOR</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-<div class="three" id="hist">
-	<h2>História (Geral e Brasil):</h2>
-
-	<table>
-		<thead>
-			<tr>
-				<th>ANO EM QUE FOI FEITO</th>
-				<th>COLÉGIO DO AUTOR</th>
-				<th>ASSUNTO</th>
-				<th>AUTOR</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-<div class="one" id="cien">
-	<h2>Ciências (Química e Física):</h2>
-
-	<table>
-		<thead>
-			<tr>
-				<th>ANO EM QUE FOI FEITO</th>
-				<th>COLÉGIO DO AUTOR</th>
-				<th>ASSUNTO</th>
-				<th>AUTOR</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-<div class="two" id="geo">
-	<h2>Geografia:</h2>
-
-	<table>
-		<thead>
-			<tr>
-				<th>ANO EM QUE FOI FEITO</th>
-				<th>COLÉGIO DO AUTOR</th>
-				<th>ASSUNTO</th>
-				<th>AUTOR</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>2025</td>
-				<td>CSA</td>
-				<td><a href="economia_e_industria_da_europa.html">Economia e Indústria da Europa</a></td>
-				<td>Bento Rulli Gomes</td>
-			</tr>
-			<tr>
-				<td>2025</td>
-				<td>CSA</td>
-				<td><a href="uniao_europeia.html">União Europeia - visão geral</a></td>
-				<td>Bento Rulli Gomes</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-<div class="three" id="gphy">
-	<h2>Geography:</h2>
-
-	<table>
-		<thead>
-			<tr>
-				<th>ANO EM QUE FOI FEITO</th>
-				<th>COLÉGIO DO AUTOR</th>
-				<th>ASSUNTO</th>
-				<th>AUTOR</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-	<br>
-	<br>
-
-	<p id="go_back"><a href="index.html">VOLTAR À PÁGINA INICIAL</a></p>
-
-<footer>
-	<p>Página escrita e programada por Bento Rulli Gomes, outrora conhecido como Bentorg.</p>
-	<p>Para mais criações pelo autor desta página, visite <a target="_blank" href="https://bentorg.github.io/PongSolo/" id="footer-link">Pong Solo</a>.</p>
-</footer>
 
 </body>
 </html>
