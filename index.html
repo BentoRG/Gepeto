@@ -1,112 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-	<meta charset="utf-8">
-	<title>Gepeto</title>
-	<style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gepeto</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
 
-		html {
-			scroll-behavior: smooth;
-		}
+    body {
+      font-family: monospace;
+      margin: 0;
+      padding: 20px;
+      font-size: 16px;
+      text-align: center;
+      background-color: #fefefe;
+    }
 
-		body {
-			font-family: monospace;
-			margin: 5px;
-			font-size: 15px;
-			text-align: center;
-		}
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
 
-		h1 {
-			text-align: center;
-			font-size: 3em;
-		}
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
 
-		.subtitulo {
-			color: gray;
-			text-align: center;
-		}
+    .subtitulo {
+      color: gray;
+      font-size: 1em;
+      margin: 10px auto;
+    }
 
-		i {
-			color: rgb(80, 80, 80);
-		}
+    i {
+      color: rgb(80, 80, 80);
+    }
 
-		button {
-			font-family: monospace;
-			padding: 25px;
-			border: 5px solid #A3D5F7;
-			border-radius: 10px;
-			text-decoration: underline;
-			color: #1C2F3F;
-		}
+    button {
+      font-family: monospace;
+      padding: 20px;
+      margin: 10px auto;
+      border: 4px solid #A3D5F7;
+      border-radius: 10px;
+      text-decoration: underline;
+      color: #1C2F3F;
+      width: 90%;
+      max-width: 400px;
+      font-size: 1em;
+      cursor: pointer;
+    }
 
-		button:hover {
-			border: 5px solid #1C2F3F;
-		}
+    button:hover {
+      border: 4px solid #1C2F3F;
+    }
 
-		button:active {
-			font-style: italic;
-			font-weight: bold;
-		}
+    button:active {
+      font-style: italic;
+      font-weight: bold;
+    }
 
-		.first {
-			background-color: #E8685D;
-		}
+    .first {
+      background-color: #E8685D;
+    }
 
-		.first:active {
-			background-color: #FFB82E;
-		}
+    .first:active {
+      background-color: #FFB82E;
+    }
 
-		.second {
-			background-color: #FFB82E;
-		}
+    .second {
+      background-color: #FFB82E;
+    }
 
-		.second:active {
-			background-color: #F9E270;
-		} 
+    .second:active {
+      background-color: #F9E270;
+    }
 
-		.third {
-			background-color: #F9E270;
-		}
+    .third {
+      background-color: #F9E270;
+    }
 
-		.third:active {
-			background-color: #E8685D;
-		}
+    .third:active {
+      background-color: #E8685D;
+    }
 
-		footer {
-			text-align: right;
-			margin-top: 10px;
-			padding: 5px;
-			font-size: 10px;
-		}
+    footer {
+      text-align: center;
+      font-size: 0.75em;
+      margin-top: 50px;
+      padding: 20px;
+      color: #555;
+    }
 
-	</style>
+    footer a {
+      color: #1C2F3F;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsividade para celulares */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      button {
+        font-size: 0.95em;
+        padding: 15px;
+      }
+
+      .subtitulo {
+        font-size: 0.9em;
+      }
+
+      footer {
+        font-size: 0.7em;
+      }
+    }
+
+  </style>
 </head>
 <body>
 
-	<h1>Gepeto</h1>
+<div class="container">
 
-	<h4 class="subtitulo">Bem-vindo ao <i>Gepeto</i>! Clique no <i>ano</i> da matéria/assunto do <i>resumo</i> que você precisa. <i>Sinta-se à vontade</i>.</h4>
+    <h1>Gepeto</h1>
 
-	<br>
+    <p class="subtitulo">Bem-vindo ao <i>Gepeto</i>! Clique no <i>ano</i> da matéria/assunto do <i>resumo</i> que você precisa. <i>Sinta-se à vontade</i>.</p>
 
-	<a href="8ano.html"><button class="first">8° ano do Ensino Fundamental</button></a>
+    <a href="8ano.html"><button class="first">8° ano do Ensino Fundamental</button></a>
 
-	<br>
-	<br>
-	<br>
+    <a href="9ano.html"><button class="second">9° ano do Ensino Fundamental</button></a>
 
-	<a href="9ano.html"><button  class="second">9° ano do Ensino Fundamental</button></a>
+    <p class="subtitulo">Um pouco sobre a nossa <b>MISSÃO</b>:</p>
 
-	<br>
-	<br>
+    <p class="subtitulo">Digitalizar e publicar gratuitamente <b>resumos</b> feitos à mão <b>por estudantes para estudantes</b> do ensino fundamental e ensino médio.</p>
 
-	<p class="subtitulo">Um pouco sobre a nossa <b>MISSÃO</b>:</p>
-	<p class="subtitulo">Digitalizar e publicar gratuitamente <b>resumos</b> feitos à mão <b>por estudantes para estudantes</b> do ensino fundamental e ensino médio.</p>
+</div>
 
-<footer>
-	<p>Página escrita e programada por Bento Rulli Gomes, outrora conhecido como Bentorg.</p>
-	<p>Para mais criações pelo autor desta página, visite <a target="_blank" href="https://bentorg.github.io/PongSolo/" id="footer-link">Pong Solo</a>.</p>
-</footer>
+  <footer>
+    <p>Página escrita e programada pela UvaVerde, outrora conhecido como Bentorg.</p>
+    <p>Para mais criações pelo autor desta página, visite<a target="_blank" href="https://bentorg.github.io/PongSolo/">Pong Solo</a>.</p>
+  </footer>
 
 </body>
 </html>
