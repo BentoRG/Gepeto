@@ -13,61 +13,63 @@
 			font-family: monospace;
 			margin: 5px;
 			font-size: 15px;
+			text-align: center;
 		}
 
 		h1 {
 			text-align: center;
-			font-size: 2.5em;
+			font-size: 3em;
 		}
 
-		h2, ol {
-			width: 70%;
-			margin-right: auto;
-			margin-left: auto;
-		}
-
-		#subtitulo {
+		.subtitulo {
 			color: gray;
 			text-align: center;
 		}
 
-		td {
-			border: 1px black solid;
-			padding: 8px;
-			border-radius: 20px;
+		i {
+			color: rgb(80, 80, 80);
 		}
 
-		th {
-			border: 1px black solid;
+		button {
+			font-family: monospace;
+			padding: 25px;
+			border: 5px solid #A3D5F7;
+			border-radius: 10px;
+			text-decoration: underline;
+			color: #1C2F3F;
+		}
+
+		button:hover {
+			border: 5px solid #1C2F3F;
+		}
+
+		button:active {
+			font-style: italic;
 			font-weight: bold;
-			padding: 8px;
-			border-radius: 20px;
 		}
 
-		table {
-			border-collapse: collapse;
-			border: 1px black solid;
-			border-radius: 50px;
-			margin-right: auto;
-			margin-left: auto;
+		.first {
+			background-color: #E8685D;
 		}
 
-		div {
-			width: 80%;
-			margin-left: auto;
-			margin-right: auto;
-		}
-
-		.one {
-			background-color: #F9E270;
-		}
-
-		.two {
+		.first:active {
 			background-color: #FFB82E;
 		}
 
-		.three {
-			background-color: #A3D5F7;
+		.second {
+			background-color: #FFB82E;
+		}
+
+		.second:active {
+			background-color: #F9E270;
+		} 
+
+		.third {
+			background-color: #F9E270;
+		}
+
+		.third:active {
+			background-color: #E8685D;
 		}
 
 		footer {
@@ -83,147 +85,26 @@
 
 	<h1>Gepeto</h1>
 
-	<h4 id="subtitulo">Bem-vindo ao <i>Gepeto</i>! Procure aqui abaixo a matéria e o assunto do resumo que você precisa. <i>Sinta-se à vontade</i>.</h4>
+	<h4 class="subtitulo">Bem-vindo ao <i>Gepeto</i>! Clique no <i>ano</i> da matéria/assunto do <i>resumo</i> que você precisa. <i>Sinta-se à vontade</i>.</h4>
 
-	<h2><i>ÍNDICE:</i></h2>
+	<br>
 
-	<ol>
-		<li><a href="#math">Matemática</a></li>
-		<li><a href="#port">Português</a></li>
-		<li><a href="#hist">História</a></li>
-		<li><a href="#cien">Ciências</a></li>
-		<li><a href="#geo">Geografia</a></li>
-		<li><a href="#gphy">Geography</a></li>
-	</ol>
+	<a href="8ano.html"><button class="first">8° ano do Ensino Fundamental</button></a>
 
-<div class="one" id="math">
-	<h2>Matemática (Álgebra e Geometria):</h2>
+	<br>
+	<br>
+	<br>
 
-	<table>
-		<thead>
-			<tr>
-				<th>ANO</th>
-				<th>DATA</th>
-				<th>PROFESSOR/A</th>
-				<th>COLÉGIO</th>
-				<th>ASSUNTO</th>
-				<th>AUTOR</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-			</tr>
-		</tbody>
-	</table>
-</div>
+	<a href="9ano.html"><button  class="second">9° ano do Ensino Fundamental</button></a>
 
-<div class="two" id="port">
-	<h2>Português:</h2>
+	<br>
+	<br>
 
-	<table>
-		<thead>
-			<tr>
-				<th>ANO</th>
-				<th>DATA</th>
-				<th>PROFESSOR/A</th>
-				<th>COLÉGIO</th>
-				<th>ASSUNTO</th>
-				<th>AUTOR</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-<div class="three" id="hist">
-	<h2>História (Geral e Brasil):</h2>
-
-	<table>
-		<thead>
-			<tr>
-				<th>ANO</th>
-				<th>DATA</th>
-				<th>PROFESSOR/A</th>
-				<th>COLÉGIO</th>
-				<th>ASSUNTO</th>
-				<th>AUTOR</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-<div class="one" id="cien">
-	<h2>Ciências (Química e Física):</h2>
-
-	<table>
-		<thead>
-			<tr>
-				<th>ANO</th>
-				<th>DATA</th>
-				<th>PROFESSOR/A</th>
-				<th>COLÉGIO</th>
-				<th>ASSUNTO</th>
-				<th>AUTOR</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-<div class="two" id="geo">
-	<h2>Geografia:</h2>
-
-	<table>
-		<thead>
-			<tr>
-				<th>ANO</th>
-				<th>DATA</th>
-				<th>PROFESSOR/A</th>
-				<th>COLÉGIO</th>
-				<th>ASSUNTO</th>
-				<th>AUTOR</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-<div class="three" id="gphy">
-	<h2>Geography:</h2>
-
-	<table>
-		<thead>
-			<tr>
-				<th>ANO</th>
-				<th>DATA</th>
-				<th>PROFESSOR/A</th>
-				<th>COLÉGIO</th>
-				<th>ASSUNTO</th>
-				<th>AUTOR</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-			</tr>
-		</tbody>
-	</table>
-</div>
+	<p class="subtitulo">Um pouco sobre a nossa <b>MISSÃO</b>:</p>
+	<p class="subtitulo">Digitalizar e publicar gratuitamente <b>resumos</b> feitos à mão <b>por estudantes para estudantes</b> do ensino fundamental e ensino médio.</p>
 
 <footer>
-	<p>Página escrita e programada por Bento Rulli Gomes, outrora conhecido como <i>Bentorg</i>.</p>
+	<p>Página escrita e programada por Bento Rulli Gomes, outrora conhecido como Bentorg.</p>
 	<p>Para mais criações pelo autor desta página, visite <a target="_blank" href="https://bentorg.github.io/PongSolo/" id="footer-link">Pong Solo</a>.</p>
 </footer>
 
