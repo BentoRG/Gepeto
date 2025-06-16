@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="logo.png" type="image/png">
+  <title>Resumo MATEMÁTICA - A2P2</title>
+  <style>
+    
+    body {
+      font-family: monospace;
+      margin: 0;
+      padding: 25px;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      background-color: #A3D5F7;
+      padding: 10px;
+      font-size: 2em;
+    }
+
+    h2 {
+      width: 90%;
+      max-width: 700px;
+      text-align: center;
+      margin: 20px auto;
+      background-color: #F9E270;
+      padding: 10px;
+    }
+
+    h3 {
+      width: 80%;
+      max-width: 500px;
+      text-align: center;
+      margin: 20px auto;
+      background-color: #FFB82E;
+      padding: 10px;
+    }
+
+    p, ul, ol {
+      width: 90%;
+      max-width: 800px;
+      margin: 20px auto;
+      line-height: 1.5em;
+    }
+
+    ul, ol {
+      width: 70%;
+      max-width: 600px;
+    }
+
+    table {
+      margin: 30px auto;
+      width: 90%;
+      max-width: 800px;
+      border-collapse: collapse;
+      text-align: center;
+    }
+
+    th, td {
+      border: 1px solid #999;
+      padding: 10px;
+    }
+
+    th {
+      background-color: #FFF4B2;
+    }
+
+    #go_back {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    #rodape {
+      text-align: center;
+      font-size: 0.8em;
+      margin-top: 30px;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.6em;
+      }
+
+      h2 {
+        font-size: 1.2em;
+      }
+
+      h3 {
+        font-size: 1.1em;
+      }
+
+      p, ul {
+        font-size: 1em;
+      }
+
+      #go_back a {
+        padding: 8px 16px;
+        font-size: 0.95em;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+
+  <h1>Resumo MATEMÁTICA - A2P2</h1>
+
+  <h2>Triângulo Retângulo</h2>
+  <p><strong>Teorema de Pitágoras:</strong> a² = b² + c²</p>
+
+  <h3>Relações Métricas no Triângulo Retângulo</h3>
+  <ul>
+    <li>c² = a · m</li>
+    <li>b² = a · n</li>
+    <li>h² = m · n</li>
+    <li>a · h = b · c</li>
+    <li>c · h = b · m</li>
+    <li>b · h = c · n</li>
+  </ul>
+
+  <h3>Diagonal de um Quadrado</h3>
+  <p>d = ℓ√2</p>
+
+  <h3>Altura de um Triângulo Retângulo (Equilátero)</h3>
+  <p>h = (3ℓ²) / 2</p>
+
+  <h3>Diagonal de um Paralelepípedo</h3>
+  <p>d₁ = √(a² + b² + c²)</p>
+
+  <hr>
+
+  <h2>Razões Trigonométricas no Triângulo Retângulo</h2>
+  <ul>
+    <li>sen α = cateto oposto / hipotenusa</li>
+    <li>cos α = cateto adjacente / hipotenusa</li>
+    <li>tg α = cateto oposto / cateto adjacente</li>
+  </ul>
+
+  <h3>Tabela de razões para ângulos notáveis</h3>
+  <table border="1" cellpadding="5">
+    <thead>
+      <tr>
+        <th>Ângulo</th><th>Sen</th><th>Cos</th><th>Tg</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>30°</td><td>1/2</td><td>√3/2</td><td>√3/3</td></tr>
+      <tr><td>45°</td><td>√2/2</td><td>√2/2</td><td>1</td></tr>
+      <tr><td>60°</td><td>√3/2</td><td>1/2</td><td>√3</td></tr>
+    </tbody>
+  </table>
+
+  <hr>
+
+  <h2>Equação do Segundo Grau (a ≠ 0)</h2>
+  <h3>Tipos</h3>
+  <ul>
+    <li>Completa: ax² + bx + c = 0</li>
+    <li>Incompleta: ax² + bx = 0 ou ax² + c = 0</li>
+  </ul>
+
+  <h3>Fórmula de Bhaskara</h3>
+  <p>x = (-b ± √Δ) / 2a</p>
+  <p>Δ = b² - 4ac</p>
+
+  <h3>Soma e Produto das Raízes</h3>
+  <ul>
+    <li>Soma: S = -b / a</li>
+    <li>Produto: P = c / a</li>
+  </ul>
+
+  <h3>Classificação das raízes</h3>
+  <ul>
+    <li>Se Δ = 0 → duas raízes reais e iguais</li>
+    <li>Se Δ &lt; 0 → não existe raiz real</li>
+    <li>Se Δ &gt; 0 → duas raízes reais e diferentes</li>
+  </ul>
+
+  <hr>
+
+  <h2>Casos de Fatoração</h2>
+
+  <ul>
+    <li><strong>Fatoração com fator comum:</strong> ax + bx = x(a + b)</li>
+    <li><strong>Fatoração por agrupamento:</strong> ax + bx + ay + by = (a + b)(x + y)</li>
+    <li><strong>Diferença de quadrados:</strong> a² - b² = (a + b)(a - b)</li>
+    <li><strong>Trinômio quadrado perfeito:</strong>
+      <ul>
+        <li>a² + 2ab + b² = (a + b)²</li>
+        <li>a² - 2ab + b² = (a - b)²</li>
+      </ul>
+    </li>
+    <li><strong>Trinômio do 2º grau:</strong> x² + Sx + P = (x + a)(x + b), onde S = a + b e P = ab</li>
+    <li><strong>Soma ou diferença de cubos:</strong>
+      <ul>
+        <li>(a + b)(a² - ab + b²) = a³ + b³</li>
+        <li>(a - b)(a² + ab + b²) = a³ - b³</li>
+      </ul>
+    </li>
+    <li><strong>Cubo da soma:</strong> a³ + 3a²b + 3ab² + b³ = (a + b)³</li>
+    <li><strong>Cubo da diferença:</strong> a³ - 3a²b + 3ab² - b³ = (a - b)³</li>
+    <li><strong>Quadrado do trinômio:</strong> (a + b + c)² = a² + b² + c² + 2(ab + ac + bc)</li>
+    <li><strong>Produto de Stevin:</strong> x² + (a + b)x + ab = (x + a)(x + b)</li>
+  </ul>
+
+    <p id="go_back"><a href="9ano.html">Voltar à página geral</a></p>
+
+    <p id="rodape">Esta é uma página <b>Gepeto</b>, programada pelo <i>Berg</i>.</p>
+
+  </div>
+</body>
+</html>
