@@ -3,116 +3,21 @@
 <head>
 	<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="logo.png" type="image/png">
-	<title>Resumo de E.R. - a2p2</title>
-	<style>
+	<title>Resumo de E.R. - A2P2</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKEPHFJ82D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-    body {
-      font-family: monospace;
-      margin: 0;
-      padding: 25px;
-      font-size: 16px;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-
-    h1 {
-      text-align: center;
-      background-color: #A3D5F7;
-      padding: 10px;
-      font-size: 2em;
-    }
-
-    h2 {
-      width: 90%;
-      max-width: 700px;
-      text-align: center;
-      margin: 20px auto;
-      background-color: #F9E270;
-      padding: 10px;
-    }
-
-    h3 {
-      width: 80%;
-      max-width: 500px;
-      text-align: center;
-      margin: 20px auto;
-      background-color: #FFB82E;
-      padding: 10px;
-    }
-
-    p, ul, ol {
-      width: 90%;
-      max-width: 800px;
-      margin: 20px auto;
-      line-height: 1.5em;
-    }
-
-    ul, ol {
-      width: 70%;
-      max-width: 600px;
-    }
-
-    table {
-      margin: 30px auto;
-      width: 90%;
-      max-width: 800px;
-      border-collapse: collapse;
-      text-align: center;
-    }
-
-    th, td {
-      border: 1px solid #999;
-      padding: 10px;
-    }
-
-    th {
-      background-color: #FFF4B2;
-    }
-
-    #go_back {
-      text-align: center;
-      margin-top: 40px;
-    }
-
-    #rodape {
-      text-align: center;
-      font-size: 0.8em;
-      margin-top: 30px;
-      color: #555;
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 1.6em;
-      }
-
-      h2 {
-        font-size: 1.2em;
-      }
-
-      h3 {
-        font-size: 1.1em;
-      }
-
-      p, ul {
-        font-size: 1em;
-      }
-
-      #go_back a {
-        padding: 8px 16px;
-        font-size: 0.95em;
-      }
-    }
-
-	</style>
+    gtag('config', 'G-NKEPHFJ82D');
+  </script>
+	<link rel="stylesheet" href="layer3.css">
 </head>
 <body>
 <div class="container">
 
-  <h1>Resumo E.R. - a2p2</h1>
+  <h1>Resumo E.R. - A2P2</h1>
     <h2>A fé católica baseia-se na tríade:</h2>
     <ul>
         <li>Sagrada Escritura</li>
@@ -179,10 +84,19 @@
         <li>É foi expulso da Alemanha e voltou para Suíça para desenvolver sua teoria</li>
     </ul>
 
-</div>
 	<p id="go_back"><a href="9ano.html">Voltar à página geral</a></p>
 
-	<p id="rodape">Esta é uma página <b>Gepeto</b>, programada pelo <i>Berg</i>.</p>
+	<div id="footer-placeholder"></div>
+
+  </div>
+
+  <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+  </script>
 
 </body>
 </html>
