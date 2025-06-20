@@ -6,6 +6,7 @@
       font-family: monospace;
       margin: 0;
       padding: 20px;
+      font-size: 16px;
     }
 
     .container {
@@ -111,7 +112,7 @@
 
     footer {
       text-align: center;
-      font-size: 0.80em;
+      font-size: 0.75em;
       margin-top: 20px;
       padding: 20px;
       color: #555;
