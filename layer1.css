@@ -1,4 +1,4 @@
-html {
+    html {
       scroll-behavior: smooth;
     }
 
@@ -24,7 +24,6 @@ html {
 
     .subtitulo {
       color: gray;
-      font-size: 1em;
       margin: 10px auto;
     }
 

@@ -85,10 +85,6 @@
       font-style: italic;
     }
 
-    footer p {
-      padding: 0px;
-    }
-
     @media (max-width: 600px) {
       h1 {
         font-size: 1.6em;
