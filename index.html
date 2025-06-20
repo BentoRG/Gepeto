@@ -152,13 +152,17 @@
 
     <p class="subtitulo">Digitalizar e publicar gratuitamente <b>resumos</b> feitos à mão <b>por estudantes para estudantes</b> do ensino fundamental e ensino médio.</p>
 
+    <div id="footer-placeholder"></div>
+
 </div>
 
-  <footer>
-    <p>Página escrita e programada por Berg (anteriormente Bentorg).</p>
-    <p>Para outras criações, explore <a target="_blank" href=“bentorg.github.io/PongSolo/”>Pong Solo</a>.</p>
-    <p>Se tiver alguma dúvida entre em contato através de <a href="mailto:help@gepetodigital.com">help@gepetodigital.com</a>.</p>
-  </footer>
+  <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+  </script>
 
 </body>
 </html>
