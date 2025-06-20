@@ -89,6 +89,11 @@
       font-style: italic;
     }
 
+    footer p {
+      line-height: 1.1em;
+      margin: 5px auto;
+    }
+
     /* Responsividade para celulares */
     @media (max-width: 600px) {
       h1 {
