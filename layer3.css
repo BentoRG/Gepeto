@@ -87,7 +87,7 @@
 
     footer p, footer ul, footer ol {
       line-height: 1.1em;
-      margin: 5px auto;
+      margin: 5 auto;
     }
 
     @media (max-width: 600px) {
