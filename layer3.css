@@ -84,6 +84,10 @@
       font-style: italic;
     }
 
+    footer p, footer ul, footer ol {
+      line-height: 1.1em;
+    }
+
     @media (max-width: 600px) {
       h1 {
         font-size: 1.6em;
