@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="logo.png" type="image/png">
+  <title>Resumo MATEMÁTICA - A1P4</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKEPHFJ82D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NKEPHFJ82D');
+  </script>
+  <link rel="stylesheet" href="layer3.css">
+</head>
+<body>
+  <div class="container">
+
+    <h1>Resumo MATEMÁTICA - A1P4</h1>
+
+    <p>Vou listar nesse resumo as fórmulas e informações mais importantes na prática pra resolver questões.</p>
+
+    <h2>FUNÇÃO do 1º GRAU (y = ax + b)</h2>
+    <ul>
+        <li>a = <strong>coeficiente angular</strong>: a > 0 reta é <strong>crescente</strong>, a < 0 reta é <strong>decrescente</strong>, a = 0 a reta é <strong>linear</strong>.</li>
+        <li>b = <strong>coeficiente linear</strong>: é o ponto da reta que intercede com o <strong>eixo y</strong> e tem coordenadas <strong>(0, b)</strong></li>
+        <li>Num gráfico onde há 2 retas que se intercedem, o <strong>X</strong> e o <strong>Y</strong> daquele ponto de interseção são descobertos igualando as funções das 2 retas</li>
+    </ul>
+
+    <h2>FUNÇÃO do 2º GRAU (y = ax² + bx + c)</h2>
+    <p>&Delta; = b² - 4ac</p>
+    <ul>    
+        <li>&Delta; = 0 -> a função tem <strong>1 Raiz Real</strong></li>
+        <li>&Delta; > 0 -> a função tem <strong>2 Raízes Reais</strong></li>
+        <li>&Delta; < 0 -> a função tem <strong>0 Raízes Reais</strong></li>
+    </ul>
+    <p>As <strong>raízes</strong> são as <strong>intersecções</strong> da parábola com o <strong>eixo X</strong></p>
+    <p>Se a > 0 a função tem concavidade <strong>pra cima</strong> (U), se a < 0 ela tem concavidade <strong>pra baixo</strong> (n)</p>
+    <p>X1.X2 = <strong>c/a</strong> e X1 + X2 = <strong>-b/a</strong>, onde X1 e X2 são as <strong>raízes</strong></p>
+    <p>O <strong>vértice da parábola</strong> é o ponto mais alto ou mais baixo e tem coordenadas (-b/2a; -Delta/4a)</p>
+    <p>O <strong>coeficiente c</strong> é o ponto da parábola que intercede com o <strong>eixo y</strong> de coordenadas <strong>(0, c)</strong></p>
+    <p>Existe uma <strong>forma fatorada</strong> da função de 2º grau, onde y = a.(x - x1).(x - x2)</p>
+
+    <h2>LEIS do SENO e do COSSENO</h2>
+    <ul>
+        <li><strong>Cosseno</strong>: a² = b² + c² - 2.b.c.(cos a) -> que é o cosseno do ângulo oposto a 'a'</li>
+        <li><strong>Seno</strong>: a/Sen A = b/Sen B = c/Sen C -> cada um desses senos gemado do ângulo oposto ao seu respectivo lado</li>
+    </ul>
+
+    <p>-> OBS1: Cos (Complemento de alpha) = Cos alpha</p>
+    <p>-> OBS2: Sen (Suplemento de alpha) = Sen alpha</p>
+
+    <h2>CIRCUNFERÊNCIA</h2>
+    <p>2.pi.r / um arco = 360° / o arco em graus</p>
+
+    <ul>
+        <li>O <strong>comprimento da circunferência</strong> é 2.pi.Raio, em unidade de comprimento, mas em radiano é só 2.pi.</li>
+        <li>Uma <strong>relação métrica entre cordas de uma circunferência</strong> que se cruzam é a seguinte, se AB e CD forem cordas e O é o ponto onde elas se cruzam:</li>
+    </ul>
+
+    <p>AS/CS = DS/BS</p>
+    <p>AS.BS = CS.DS</p>
+
+    <p>-> OBS1: vale lembrar que o <strong>menor lado</strong> de um triângulo é sempre oposto ao <strong>menor ângulo</strong>, e o mesmo serve pro <strong>maior lado</strong> com <strong>maior ângulo</strong>.</p>
+
+    <p id="go_back"><a href="9ano.html">Voltar à página geral</a></p>
+
+    <div id="footer-placeholder"></div>
+
+  </div>
+
+  <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+  </script>
+</body>
+</html>
