@@ -462,7 +462,7 @@
       </table>
     </div>
 
-    <p id="page-views">Carregando visualizações…</p>
+    <p id="page-views">Carregando visualizações…</p> https://script.google.com/macros/s/AKfycby-2utLBKq8S1-T1_5nqS8KI3HJ4INV5U0Fi6NTsg3jumSMp4qc9oP2IXVRhOYCLYFY/exec
 
     <p id="go_back"><a href="index.html">VOLTAR À PÁGINA INICIAL</a></p>
 
@@ -478,10 +478,16 @@
         });
 
         (function () {
-          const ENDPOINT = 'https://script.google.com/macros/s/AKfycbzPKYA3opSEnjwYbhEsC-Uq_eYxGL4bX63yVKsdJGYP7k0E7FCmTC99M9xjoDmwkJxe/exec'; // ex.: https://script.google.com/macros/s/ABC123/exec
-          const path = location.pathname || '/';
+          const ENDPOINT = 'https://script.google.com/macros/s/AKfycbzPKYA3opSEnjwYbhEsC-Uq_eYxGL4bX63yVKsdJGYP7k0E7FCmTC99M9xjoDmwkJxe/exec';
+
+          // Usa ORIGIN + PATHNAME (sem query e sem hash), pois o GA4 salva page_location completo
+          const origin = location.origin || '';
+          const pathname = (location.pathname || '/')
+            .replace(/index\.html$/i, '')
+            .replace(/\/+$/, '') || '/';
+
           const host = location.hostname || '';
-          const url = `${ENDPOINT}?path=${encodeURIComponent(path)}&host=${encodeURIComponent(host)}`;
+          const url = `${ENDPOINT}?path=${encodeURIComponent(pathname)}&host=${encodeURIComponent(host)}`;
 
           fetch(url, { cache: 'no-store' })
             .then(r => r.json())
