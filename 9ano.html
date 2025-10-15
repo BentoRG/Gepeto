@@ -462,9 +462,7 @@
       </table>
     </div>
 
-    <p id="page-views">Carregando visualizações…</p>
-
-    <a href="index.html"><button id="go_back">VOLTAR À PÁGINA INICIAL</button></a>
+    <a href="index.html" id="link_go_back"><button id="go_back">VOLTAR À PÁGINA INICIAL</button></a>
 
     <div id="footer-placeholder"></div>
 
@@ -476,36 +474,6 @@
         .then(data => {
           document.getElementById("footer-placeholder").innerHTML = data;
         });
-
-        (function () {
-          const ENDPOINT = 'https://script.google.com/macros/s/AKfycby-2utLBKq8S1-T1_5nqS8KI3HJ4INV5U0Fi6NTsg3jumSMp4qc9oP2IXVRhOYCLYFY/exec';
-
-          // Usa ORIGIN + PATHNAME (sem query e sem hash), pois o GA4 salva page_location completo
-          const origin = location.origin || '';
-          const pathname = (location.pathname || '/')
-            .replace(/index\.html$/i, '')
-            .replace(/\/+$/, '') || '/';
-
-          const host = location.hostname || '';
-          const url = `${ENDPOINT}?path=${encodeURIComponent(pathname)}&host=${encodeURIComponent(host)}`;
-
-          fetch(url, { cache: 'no-store' })
-            .then(r => r.json())
-            .then(data => {
-              const el = document.getElementById('page-views');
-              if (!el) return;
-              if (data && !data.error) {
-                const n = Number(data.screenPageViews || 0);
-                el.textContent = `${n.toLocaleString('pt-BR')} visualizações`;
-              } else {
-                el.textContent = '—';
-              }
-            })
-            .catch(() => {
-              const el = document.getElementById('page-views');
-              if (el) el.textContent = '—';
-            });
-        })();
   </script>
 
 </body>
