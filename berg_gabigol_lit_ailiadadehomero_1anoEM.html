@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="logo.png" type="image/png">
+  <title>"A Íliada de Homero (adaptada para jovens)"</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKEPHFJ82D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NKEPHFJ82D');
+  </script>
+  <link rel="stylesheet" href="layer3.css">
+</head>
+<body>
+  <div class="container">
+
+    <h1>"A Íliada de Homero (adaptada para jovens)"</h1>
+
+    <h2>8 - Na tenda de Aquiles</h2>
+    <p>Os gregos se unem e Agamêmnon oferece prêmios para Aquiles, se este voltar a lutar pelos gregos. Aquiles recusa e ameaça retornar ao seu reino: Ftia.</p>
+
+    <h2>9 - Uma emboscada noturna</h2>
+    <p>Agamêmnon e Menelau se juntam a Nestor (um sábio conselheiro) no meio da noite, bolando o plano de enviar um espião ao acampamento troiano. Diomédes e Ulisses são enviados e acabam furtando cavalos e carros, bem como matando um rei aliado a Tróia.</p>
+
+    <h2>10 - O engano de Zeus</h2>
+    <p>Outra batalha se inicia e Zeus deixa claro que pretende favorecer Tróia. Hera, querendo favorecer os gregos, engana Afrodite a lhe doar recursos para chegar ao deus Sono e fazer Pasítea se apaixonar por ele. Com isso, Hera convence Sono a adormecer Zeus, o que permite que Posêidon possa, secretamente, ajudar os gregos.</p>
+    <p>Quando Zeus acorda Heitor está ferido e os troianos estão perdendo a batalha. Então Zeus se enfurece e envia mensagens para Posêidon se retirar da batalha e Apolo encorajar Heitor. Isso leva Tróia a voltar a ganhar.</p>
+
+    <p id="go_back"><a href="1anoEM.html">Voltar à página geral</a></p>
+
+    <div id="footer-placeholder"></div>
+
+  </div>
+
+  <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+  </script>
+</body>
+</html>
