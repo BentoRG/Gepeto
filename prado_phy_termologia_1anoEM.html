@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="logo.png" type="image/png">
+  <title>Introdução à Termologia</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKEPHFJ82D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NKEPHFJ82D');
+  </script>
+  <link rel="stylesheet" href="layer3.css">
+</head>
+<body>
+  <div class="container">
+
+    <h1>Introdução à Termologia</h1>
+
+    <h2>Temperatura X Calor</h2>
+    <ul>
+        <li><strong>Temperatura:</strong> grau de agitação molecular.</li>
+        <li><strong>Calor:</strong> energia térmica em trânsito.</li>
+    </ul>
+
+    <p>O objeto mais "quente" sempre vai ceder calor para o mais "frio". Quando os dois ficarem na mesma temperatura, haverá <strong>equilíbrio térmico</strong>.</p>
+
+    <p><strong>Equilíbrio Térmico:</strong> quando não há troca de calor, quando as temperaturas estão iguais.</p>
+
+    <h2>Quando há troca de calor, 2 efeitos podem ocorrer:</h2>
+    <ul>
+        <li>Variação de temperatura = Calor sensível</li>
+        <li>Mudança de estado físico = Calor latente</li>
+    </ul>
+
+    <p><strong>OBS:</strong> Nós iremos trabalhar apenas com substâncias puras, ou seja, a mudança de estado físico possui temperatura constante.</p>
+
+    <p>Ex: um recipiente com água e gelo. Se eles entrarem em equilíbrio térmico com 0°C, nenhum deles mudará de estado físico, porque a mudança de estado físico de substâncias puras a temperatura é constante.</p>
+
+    <h2>Unidades:</h2>
+    <ul>
+        <li>Temperatura: °C; °F; K (faz parte do S.I.)</li>
+        <li>Calor: calorias (cal); joule (J; faz parte do S.I.)</li>
+    </ul>
+
+    <h2>Calor específico (c):</h2>
+    <p>Informa a quantidade de calor necessária para variar em 1°C a temperatura de cada grama de uma substância.</p>
+
+    <h2>Força de coesão:</h2>
+    <p>É a força que une as moléculas.</p>
+    <ul>
+        <li>Ex: sólido: alta coesão</li>
+        <li>Líquido: média coesão</li>
+        <li>Gás: baixa coesão</li>
+    </ul>
+
+    <p id="go_back"><a href="1anoEM.html">Voltar à página geral</a></p>
+
+    <div id="footer-placeholder"></div>
+
+  </div>
+
+  <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+  </script>
+</body>
+</html>
