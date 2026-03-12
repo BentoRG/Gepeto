@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="logo.png" type="image/png">
+  <title>Categorias Geográficas</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKEPHFJ82D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NKEPHFJ82D');
+  </script>
+  <link rel="stylesheet" href="layer3.css">
+</head>
+<body>
+  <div class="container">
+
+    <h1>Categorias Geográficas</h1>
+
+    <ul>
+      <li><strong>Ecúmeno:</strong> área que favorece adaptação/fixação humana.</li>
+      <li><strong>Anecúmeno:</strong> dificulta.</li>
+      <li><strong>Espaço geográfico:</strong> espaço onde o homem constrói/modifica para atender suas necessidades. Formado por elementos naturais e culturais.</li>
+      <li><strong>Paisagem:</strong> tudo o que é perceptível pelos sentidos, podendo ser natural ou humanizada.</li>
+      <li><strong>Território:</strong> Pode ser legal, ilegal, autônomo, independente. Espaço definido e delimitado por relações de poder/apropriação que nele se instalam. Delimitação se dá por fronteiras, podendo ser definidos pelos homens ou natureza.</li>
+      <li><strong>Territorialidade:</strong> expressão material/simbólica do poder de um grupo sobre o território, suas características e códigos.</li>
+      <li><strong>Territorialização:</strong> Quando o espaço passa a ter controle, limites, função, identidade.</li>
+      <li><strong>Desterritorialização:</strong> Perda do território.</li>
+      <li><strong>Reterritorialização:</strong> nem sempre dá certo. O homem tenta se adaptar aos novos territórios.</li>
+      <li><strong>Lugar:</strong> território em que você tem elo afetivo.</li>
+      <li><strong>Região:</strong> Parte do espaço a partir de critérios naturais/pré-definidos pelo homem. A regionalização facilita estudo do espaço e desenvolvimento de políticas públicas. Regiões podem ser naturais ou intelectuais.</li>
+      <li><strong>Rede:</strong> Conjunto de fixos interligados por fluxos. Ex: Material digital, cultural. Pode ser legal ou ilegal.</li>
+    </ul>
+
+    <p id="go_back"><a href="1anoEM.html">Voltar à página geral</a></p>
+
+    <div id="footer-placeholder"></div>
+
+  </div>
+
+  <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+  </script>
+</body>
+</html>
