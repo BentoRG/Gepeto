@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="logo.png" type="image/png">
+  <title>Cálculo de massa atômica</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKEPHFJ82D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NKEPHFJ82D');
+  </script>
+  <link rel="stylesheet" href="layer3.css">
+</head>
+<body>
+  <div class="container">
+
+    <h1>Cálculo de massa atômica</h1>
+
+    <p>Elemento cloro:</p>
+    <p>— Cl³⁵ (75%)</p>
+    <p>— Cl³⁷ (25%)</p>
+
+    <p>M.A = (35 . 75 + 37 . 25) / 100 —> M.A = 3550 / 100</p>
+    <p><strong>MA = 35,5 u</strong></p>
+
+    <br><br>
+
+    <p>X: M.A = 81,3</p>
+    <p>Isótopos: X₁⁸⁰ (x) e X₂⁸² (y) [cálculo das abundâncias de cada isótopo]</p>
+
+    <p><b><u><i>MA = (A₁ . % + A₂ . %) / 100</i></u></b> —> 81,3 = (80 . x + 82 . y) / 100</p>
+    
+    <p>x + y = 100% // y = 100 - x</p>
+
+    <p>8130 = 80x + 82(100 - x)</p>
+    <p>8130 = 80x + 8200 - 82x —> 70 = 2x —> <strong>x = 35%</strong></p>
+    <p><strong>y = 65%</strong></p>
+
+    <p>(65 + 35 = 100)</p>
+
+    <p id="go_back"><a href="1anoEM.html">Voltar à página geral</a></p>
+
+    <div id="footer-placeholder"></div>
+
+  </div>
+
+  <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+  </script>
+</body>
+</html>
