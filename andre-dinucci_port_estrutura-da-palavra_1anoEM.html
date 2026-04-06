@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="logo.png" type="image/png">
+  <title>Estrutura da Palavra</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKEPHFJ82D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NKEPHFJ82D');
+  </script>
+  <link rel="stylesheet" href="layer3.css">
+</head>
+<body>
+  <div class="container">
+
+    <h1>Estrutura da Palavra</h1>
+
+    <p><strong>Morfemas / Elementos morfológicos:</strong> menores unidades significativas de uma palavra.</p>
+
+    <p><strong>1) Radical (base do significado da palavra)</strong></p>
+    <ul>
+      <li>Ex: ferro, ferreiro, ferrugem / cantar, cantei, cantou</li>
+      <li>Obs: palavras cognatas (possuem o mesmo radical)</li>
+    </ul>
+
+    <p><strong>2) Vogal temática (geralmente se agrega ao radical preparando-o para possíveis desinências)</strong></p>
+    <ul>
+      <li>Vogais temáticas nominais (A, E, O átonas finais)
+        <ul>
+          <li>Ex: mesa, dente, manto</li>
+        </ul>
+      </li>
+      <li>Vogais temáticas verbais (demarcam as conjunções A, E, I)
+        <ul>
+          <li>Ex: amar, vender, partir</li>
+          <li>Obs: verbo "pôr" (2ª conjugação)</li>
+        </ul>
+      </li>
+    </ul>
+
+    <p><strong>3) Desinências (demarcam flexões)</strong></p>
+    <ul>
+      <li>Desinências nominais: de gênero / de número
+        <ul>
+          <li>Ex: meninas, meninos</li>
+        </ul>
+      </li>
+      <li>Desinências verbais: desinência modo-temporal / desinência número-pessoal
+        <ul>
+          <li>Ex: cantava, cantavas, cantava, cantávamos, cantáveis, cantavam</li>
+        </ul>
+      </li>
+    </ul>
+
+    <p><strong>4) Afixos (costumam alterar o sentido de uma palavra)</strong></p>
+    <ul>
+      <li>Prefixo / Sufixo
+        <ul>
+          <li>Ex: anormal, velozmente, deslealdade</li>
+        </ul>
+      </li>
+    </ul>
+
+    <p><strong>Obs: Vogal e consoante de ligação:</strong> não são morfemas, pois não apresentam valor significativo, apenas facilitam a pronúncia.</p>
+
+    <h2>Fonética e Fonema</h2>
+
+    <ul>
+      <li><strong>Ditongo:</strong> 2 vogais que andam juntas na mesma sílaba.
+        <ul>
+          <li>Ex: boito, são, quase, beijo</li>
+        </ul>
+      </li>
+      <li><strong>Tritongo:</strong> 3 vogais que andam juntas na mesma sílaba.
+        <ul>
+          <li>Ex: Uruguai, saguão</li>
+        </ul>
+      </li>
+      <li><strong>Hiato:</strong> 2 vogais que estão lado a lado, mas cada uma em uma sílaba.
+        <ul>
+          <li>Ex: viagem, hiato</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3>Combinações</h3>
+
+    <ul>
+      <li>Encontros consonantais:
+        <ol>
+          <li>Perfeitos: blindagem, criança</li>
+          <li>Imperfeitos: apto, sublinhar</li>
+        </ol>
+      </li>
+      <li>Dígrafo (2 letras = 1 som):
+        <ol>
+          <li>Vocálicos: anta, pente, cinto</li>
+          <li>Consonantes: amanhã, folha, chave</li>
+        </ol>
+      </li>
+      <li>Dífono (2 sons = 1 letra):
+        <ul>
+          <li>Ex: fixo -> ks / anexo -> ks</li>
+        </ul>
+      </li>
+    </ul>
+
+    <p id="go_back"><a href="1anoEM.html">Voltar à página geral</a></p>
+
+    <div id="footer-placeholder"></div>
+
+  </div>
+
+  <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+  </script>
+</body>
+</html>
