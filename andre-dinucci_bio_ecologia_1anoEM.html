@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="logo.png" type="image/png">
+  <title>Ecologia</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKEPHFJ82D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NKEPHFJ82D');
+  </script>
+  <link rel="stylesheet" href="layer3.css">
+</head>
+<body>
+  <div class="container">
+
+    <h1>Ecologia</h1>
+
+    <p>1. Alelobiose: Interação entre os seres vivos</p>
+    <p>2. Ecobiose: Interação entre seres vivos e o meio</p>
+
+    <h2>Conceitos fundamentais</h2>
+
+    <ul>
+      <li><strong>Habitat:</strong> local onde a espécie é encontrada / localização geográfica precisa da espécie. O habitat é fundamental para manutenção da espécie.</li>
+      <li><strong>Nicho ecológico:</strong> conjunto de papéis ecológicos que a espécie desempenha na comunidade ou ecossistema. Engloba aspectos alimentares, comportamentais, reprodutores e outros.</li>
+    </ul>
+
+    <p><strong>Obs 1: Sobreposição de nicho:</strong> quando 2 espécies têm mesmo papel ecológico, levando a uma disputa por recursos. Isso leva a espécie menos adaptada à exclusão (Princípio do Exclusão Competitiva ou Princípio de Gause).</p>
+
+    <h3>Nicho Potencial X Nicho Realizado</h3>
+
+    <ul>
+      <li><strong>Potencial:</strong> faixa que abriga condições para a sobrevivência de uma espécie e desenvolvimento de seu papel ecológico. (Desconsidera a presença de predadores e competidores).</li>
+      <li><strong>Realizado:</strong> leva em consideração a presença de predadores e competidores.</li>
+    </ul>
+
+    <p>Exemplo: Gráfico mostrando que o nicho realizado (Espécie A) é uma parte restrita do nicho potencial da Espécie A devido à presença da Espécie B.</p>
+
+    <h2>Relações Tróficas</h2>
+
+    <ul>
+      <li><strong>Cadeia Trófica (alimentar):</strong> sequência que mostra o sentido da transferência de energia. É organizada em níveis tróficos.</li>
+    </ul>
+
+    <h3>Níveis Tróficos</h3>
+
+    <ul>
+      <li><strong>Produtores:</strong> capazes de produzir o próprio alimento (autotróficos).
+        <ul>
+          <li>Ocupam o 1º nível trófico.</li>
+          <li>Disponibilizam energia para os próximos níveis tróficos.</li>
+        </ul>
+      </li>
+      <li><strong>Consumidores:</strong> podem ocupar diferentes níveis tróficos dependendo da posição na cadeia.
+        <ul>
+          <li>Não produzem o próprio alimento (heterotróficos).</li>
+        </ul>
+      </li>
+      <li><strong>Decompositores:</strong> fungos e bactérias.
+        <ul>
+          <li>Transformam matéria orgânica morta em nutrientes inorgânicos para o solo.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <p><strong>Obs: Transferência de energia:</strong> A energia diminui ao longo da cadeia pelo gasto na forma de calor e trabalho celular. Sendo assim, o aporte de energia é menor para consumidores do topo da cadeia.</p>
+
+    <h3>Teia Trófica (alimentar)</h3>
+    <ul>
+      <li>Representa as relações alimentares entre indivíduos da comunidade.</li>
+      <li>Na teia, um mesmo consumidor pode ocupar diferentes posições quanto ao seu nível trófico.</li>
+    </ul>
+
+    <h2>Pirâmides Ecológicas</h2>
+
+    <h3>Pirâmide de Número</h3>
+    <ul>
+      <li>Representa o número de indivíduos de cada área ocupada em cada nível trófico.</li>
+      <li>Pode ser invertida em casos de produtores de grande porte. Ex: 1 árvore sustentando muitos insetos.</li>
+    </ul>
+
+    <h3>Pirâmide de Energia</h3>
+    <ul>
+      <li>Mostra a quantidade de energia em cada nível trófico e sua transferência na cadeia.</li>
+      <li>A energia é disponibilizada na cadeia pelos produtores e vai diminuindo a cada nível.</li>
+      <li>Apenas cerca de 10% da energia passa para o próximo nível.</li>
+      <li>Nunca pode ser invertida.</li>
+    </ul>
+
+    <h3>Pirâmide de Biomassa</h3>
+    <p>Refere o "peso seco" de cada nível trófico por unidade de área estudada. (Peso seco: corresponde à massa dos indivíduos desconsiderando o percentual ocupado pela água).</p>
+
+    <ol>
+      <li><strong>Ecossistema Terrestre:</strong> A biomassa dos produtores é superior à dos consumidores, sendo assim, não pode ser representado de forma invertida.</li>
+      <li><strong>Ecossistema Aquático:</strong>
+        <ul>
+          <li>Geralmente, os principais produtores são os fitoplânctons.</li>
+          <li>O fitoplâncton compreende seres unicelulares, tendo uma biomassa inferior aos consumidores primários (zooplâncton).</li>
+          <li>Apesar da menor biomassa, a taxa de renovação é alta.</li>
+          <li>A pirâmide pode ser representada de forma invertida.</li>
+        </ul>
+      </li>
+    </ol>
+
+    <p id="go_back"><a href="1anoEM.html">Voltar à página geral</a></p>
+
+    <div id="footer-placeholder"></div>
+
+  </div>
+
+  <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+  </script>
+</body>
+</html>
