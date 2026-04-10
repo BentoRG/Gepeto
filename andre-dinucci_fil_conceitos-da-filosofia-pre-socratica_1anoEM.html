@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="logo.png" type="image/png">
+  <title>Conceitos da filosofia pré-socrática</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKEPHFJ82D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NKEPHFJ82D');
+  </script>
+  <link rel="stylesheet" href="layer3.css">
+</head>
+<body>
+  <div class="container">
+
+    <h1>Conceitos da filosofia pré-socrática</h1>
+
+    <ul>
+        <li><strong>Cosmos:</strong> mundo em ordem. Ideia de que o mundo tem racionalidade, com leis e regras fixas. É a diferença do caos.</li>
+        <li><strong>Physis:</strong> a natureza como um todo, da qual fazem parte tudo o que há, sendo vivo ou não (como pedras, montanhas, mares, nuvens).</li>
+        <li><strong>Lógos:</strong> palavra grega com muitos significados, mas em especial "razão". É o pensamento causal, encadeado, lógico.</li>
+        <li><strong>Arché:</strong> princípio originário e ingênito do universo. Aquilo antes do qual nada existiu além dele e aquilo a partir do qual tudo veio a existir.</li>
+    </ul>
+
+    <p id="go_back"><a href="1anoEM.html">Voltar à página geral</a></p>
+
+    <div id="footer-placeholder"></div>
+
+  </div>
+
+  <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+  </script>
+</body>
+</html>
