@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" href="logo.png" type="image/png">
+
+  <title>Expressing Opinion</title>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKEPHFJ82D"></script>
+
+  <script>
+
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag(){dataLayer.push(arguments);}
+
+    gtag('js', new Date());
+
+
+
+    gtag('config', 'G-NKEPHFJ82D');
+
+  </script>
+
+  <link rel="stylesheet" href="layer3.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+
+
+    <h1>Expressing Opinion</h1>
+
+    <h2>I imagine...</h2>
+    <p>Ex: I imagine all of them want their children to be happy and successful.</p>
+
+    <h2>I think...</h2>
+    <p>Ex: I think setting realistic expectations can be a good thing.</p>
+
+    <h2>I'm sure...</h2>
+    <p>Ex: I'm sure that everything will work out perfectly in the end.</p>
+
+    <h2>I guess...</h2>
+    <p>Ex: I guess sometimes you just have to set your own expectations.</p>
+
+    <h2>If you ask me...</h2>
+    <p>Ex: If you ask me, this is the best movie of the year.</p>
+
+    <h2>It seems to me...</h2>
+    <p>Ex: It seems to me that we should reconsider our plans before making a final decision.</p>
+
+    <h2>I suppose...</h2>
+    <p>Ex: I suppose we could try a different approach if this one doesn't work.</p>
+
+
+
+    <p id="go_back"><a href="1anoEM.html">Voltar à página geral</a></p>
+
+
+
+    <div id="footer-placeholder"></div>
+
+
+
+  </div>
+
+
+
+  <script>
+
+      fetch("footer.html")
+
+        .then(response => response.text())
+
+        .then(data => {
+
+          document.getElementById("footer-placeholder").innerHTML = data;
+
+        });
+
+  </script>
+
+</body>
+
+</html>
