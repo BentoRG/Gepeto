@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="logo.png" type="image/png">
+  <title>Paralelos e Meridianos</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKEPHFJ82D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NKEPHFJ82D');
+  </script>
+  <link rel="stylesheet" href="layer3.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- transcrição aqui -->
+    <h1>Paralelos e Meridianos</h1>
+    <p>Linhas imaginárias que auxiliam na localização de qualquer ponto</p>
+    <ul>
+      <li>Paralelas: circunferências que cortam horizontalmente a Terra. Usadas para a delimitação de zonas climáticas e como referência para as latitudes. O equador é o paralelo principal (0 graus), dividindo a terra em norte e sul. Temos de 0 a 90 graus ao norte e de 0 a 90 graus ao sul.</li>
+      <li>Meridianas: semi-circunferências que cortam a Terra do polo norte ao sul, sendo o meridiano de Greenwich o inicial, dividindo a Terra em leste e oeste. Meridianos servem de referência para fusos horários e marcação de longitudes.</li>
+    </ul>
+
+    <strong>Coordenadas geográficas</strong>
+    <p>Sistema de linhas imaginárias usadas para localização de qualquer ponto na superficie da terrestre. As coordenadas são latitude e longitude.</p>
+    <ul>
+      <li>Latitude: distância em graus de qualquer ponto até a linha do equador, varia de 0 a 90 graus N e 0 a 90 graus S</li>
+      <li>Longitude: distância em graus de qualquer ponto até Greenwich, varia de 0 a 180 graus L e 0 a 180 graus O</li>
+    </ul>
+
+    <p id="go_back"><a href="1anoEM.html">Voltar à página geral</a></p>
+
+    <div id="footer-placeholder"></div>
+
+  </div>
+
+  <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+  </script>
+</body>
+</html>
