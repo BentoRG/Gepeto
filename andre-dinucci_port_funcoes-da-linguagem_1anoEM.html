@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="logo.png" type="image/png">
+  <title>Funções da Linguagem</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKEPHFJ82D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NKEPHFJ82D');
+  </script>
+  <link rel="stylesheet" href="layer3.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- transcrição aqui -->
+    <h1>Funções da Linguagem</h1>
+    <strong>1) Emotiva / expressiva</strong>
+    <ul>
+      <li>Foco nas emoções, preocupações, opiniões, atitudes do enunciador</li>
+      <li>Subjetividade</li>
+    </ul>
+    <strong>2) Apelativa / conativa</strong>
+    <ul>
+      <li>Busca chamar a atenção do leitor</li>
+      <li>Persuasão</li>
+      <li>Comum em textos publicitários</li>
+    </ul>
+    <strong>3) Poética</strong>
+    <ul>
+      <li>Cuidado na elaboração da mensagem</li>
+      <li>Jogo de palavras (ambiguidade, trocadilhos)</li>
+      <li>Predomínio da conotação (sentido figurado)</li>
+    </ul>
+    <strong>4) Referencial</strong>
+    <ul>
+      <li>Foco no contexto</li>
+      <li>Predomínio da denotação (sentido literal)</li>
+      <li>Objetividade</li>
+      <li>Comum em textos de caráter informativo (como uma notícia)</li>
+    </ul>
+    <strong>5) Fática</strong>
+    <ul>
+      <li>Testa ou abre canal de comunicação</li>
+      <li>Comum no início de diálogos</li>
+      <li>Manutenção da comunicação</li>
+      <li>Ex: "alô?"</li>
+    </ul>
+    <strong>6) Metalinguística</strong>
+    <ul>
+      <li>Código explicando o próprio código</li>
+      <li>Ex: Dicionário (a palavra explicando a própria palavra)</li>
+    </ul>
+
+    <p id="go_back"><a href="1anoEM.html">Voltar à página geral</a></p>
+
+    <div id="footer-placeholder"></div>
+
+  </div>
+
+  <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+  </script>
+</body>
+</html>
