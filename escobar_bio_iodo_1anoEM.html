@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="logo.png" type="image/png">
+  <title>Iodo</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKEPHFJ82D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NKEPHFJ82D');
+  </script>
+  <link rel="stylesheet" href="layer3.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- transcrição aqui -->
+    <h1>Iodo</h1>
+    <p>O iodo é um micromineral (elemento ultratraço) pois só precisamos ingerir 150 microgramas por dia.</p>
+    <p>Algumas de suas fontes são Frutos do mar e o sal de cozinha.</p>
+    <p><b>Obs:</b> Antigamente as pessoas do interior eram prováveis de terem problema com iodo pois não tinham acesso a frutos do mar e o sal ainda não era iodado.</p>
+    <p><b>FUNÇÃO:</b> É utilizado na produção de Hormônios da tireoide que controlam o metabolismo basal.</p>
+    <p><b>Obs:</b> Metabolismo basal é a utilização de carboidratos e lipídios (gordura).</p>
+
+    <h2>Hormônios da Tireoide</h2>
+    <p>A tireoide produz principalmente dois Hormônios: T³ (Triodotironina) e T⁴ (Tiroxina) os quais são responsáveis por controlar o metabolismo basal.</p>
+    <p><b>Obs:</b> Quando os Hormônios aumentam o metabolismo basal, nosso organismo libera calor. Logo, podemos concluir que esses Hormônios também podem atuar na regulamentação da temperatura.</p>
+
+    <h2>Controle da liberação dos Hormônios da Tireoide</h2>
+    <p>Existe uma glândula endócrina chamada Hipófise a qual libera o TSH que é o hormônio que estimula a tireoide através de seus receptores a produzir o T³ e T⁴.</p>
+
+    <h2>DISFUNÇÕES DA TIREOIDE</h2>
+    <h3>Hipertireoidismo (Doença de Graves)</h3>
+    <p><b>Características:</b> Calor, alto metabolismo, sudorese, menos massa corporal e menos peso.</p>
+    <p>Ela é uma doença autoimune, ou seja, o próprio corpo cria anticorpos contra as células do corpo.</p>
+    <p>No Hipertireoidismo os anticorpos se ligam aos receptores da tireoide gerando um estímulo constante da produção de T³ e T⁴ porém, quando há um excesso de T³ e T⁴ a Hipófise é inibida de produzir o TSH.</p>
+    <p><b>Consequência:</b> A tireóide aumenta formando o bócio exoftálmico.</p>
+    
+    <h3>Tireoidite Hashimoto</h3>
+    <p>Também é uma doença autoimune porém neste caso os anticorpos promovem a morte celular das células da tireoide assim diminuindo a liberação de T³ e T⁴.</p>
+
+    <p id="go_back"><a href="1anoEM.html">Voltar à página geral</a></p>
+
+    <div id="footer-placeholder"></div>
+
+  </div>
+
+  <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+  </script>
+</body>
+</html>
