@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="logo.png" type="image/png">
+  <title>Gênero Dramático</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKEPHFJ82D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NKEPHFJ82D');
+  </script>
+  <link rel="stylesheet" href="layer3.css">
+</head>
+<body>
+  <div class="container">
+
+    <h1>Gênero Dramático</h1>
+    <ul>
+      <li>Dividido em 3 tipos:
+        <ul>
+          <li><b>Tragédia:</b> Final trágico, contendo a hamartia e catarse (canto do bode; Personagens nobres).
+            <ul>
+              <li><b>Hamartia:</b> erro trágico do herói, não sendo necessariamente mal.</li>
+              <li><b>Catarse:</b> efeito causado no público pela tragédia, a liberação das emoções.</li>
+            </ul>
+          </li>
+          <li>Hamartia leva a tragédia que precisa da catarse.</li>
+          <li><b>Comédia:</b> o cotidiano satirizado, não necessariamente tem graça, mas sim nó da tragédia (canto de festa).
+            <ul>
+              <li>Desfecho positivo.</li>
+            </ul>
+          </li>
+          <li><b>Drama:</b> junção das dois, misturando elementos.</li>
+        </ul>
+      </li>
+    </ul>
+    <strong>Texto Teatral</strong>
+    <p>(elementos essenciais)</p>
+    <ul>
+      <li><b>Ato:</b> grande divisão da obra teatral.</li>
+      <li><b>Cena/quadro:</b> Entrada e/ou saída dos atores do palco, subdivisão do ato.
+        <ul>
+          <li>Não atos dramáticos por poderem alterar o rumo da história.</li>
+        </ul>
+      </li>
+      <li><b>Diálogo:</b> conversa entre personagens. Elemento principal.</li>
+      <li><b>Monólogo:</b> o interior, pensamentos de um personagem, revelando angústias.</li>
+      <li><b>Prólogo:</b> início, apresentando e contextualizando.</li>
+      <li><b>Rubrica:</b> instrução para uma cena, não é falada.</li>
+    </ul>
+    <strong>Linguagem Cênica</strong>
+    <p>Tudo que ajuda a contar a história além das palavras do texto.</p>
+    <ul>
+      <li><b>Espaço Cênico:</b> ambiente da peça.</li>
+      <li><b>Cenografia:</b> construção visual do palco.</li>
+      <li><b>Figurino:</b> roupas e acessórios denunciando os problemas juntos da peça.</li>
+      <li><b>Gestualidade:</b> comunicação pelo corpo que às vezes comunica mais que a fala.</li>
+      <li><b>Música/Trilha:</b> ligada na construção de emoções.</li>
+    </ul>
+
+    <p id="go_back"><a href="1anoEM.html">Voltar à página geral</a></p>
+
+    <div id="footer-placeholder"></div>
+
+  </div>
+
+  <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+  </script>
+</body>
+</html>
