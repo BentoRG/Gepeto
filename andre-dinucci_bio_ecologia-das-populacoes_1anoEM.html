@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="logo.png" type="image/png">
+  <title>Ecologia das Populações</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKEPHFJ82D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NKEPHFJ82D');
+  </script>
+  <link rel="stylesheet" href="layer3.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- transcrição aqui -->
+    <h1>Ecologia das Populações</h1>
+    <p>→Se destina a estudar principalmente as variações na densidade populacional.</p>
+    <p>A densidade populacional é dada pelo número de indivíduos que ocorrem em determinada área.</p>
+    <p>Para se calcular a densidade populacional, se divide o número de indivíduos pela área (nº de indivíduos / área).</p>
+    <ul>
+      <li><b>Crescimento populacional:</b> ocorre quando a taxa de natalidade + taxa de Imigração é maior que a taxa de de mortalidade + taxa de Emigração.</li>
+      <li><b>Declínio populacional:</b> ocorre quando a taxa de natalidade + taxa de Imigração é menor que a taxa de mortalidade + taxa de Emigração.</li>
+      <li><b>População estável:</b> quando taxa de natalidade + taxa de imigração = a taxa de mortalidade + emigração:</li>
+    </ul>
+    <h2>Modelo de crescimento populacional:</h2>
+    <p><b>Capacidade suporte:</b> é a capacidade máxima de crescimento da população, de acordo com os recursos do meio.</p>
+    <p><b>Potencial biótico:</b> demonstra o crescimento da população com recursos ilimitados.</p>
+    <p><b>Crescimento real:</b> modelo de crescimento populacional logístico, tendendo a 0 ao se aproximar da capacidade de suporte.</p>
+    <p><b>Resistência do meio:</b> conjunto de fatores que dificultam a sobrevivência e reprodução dos indivíduos.</p>
+
+    <p id="go_back"><a href="1anoEM.html">Voltar à página geral</a></p>
+
+    <div id="footer-placeholder"></div>
+
+  </div>
+
+  <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+  </script>
+</body>
+</html>
