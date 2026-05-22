@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="logo.png" type="image/png">
+  <title>Revolta Praieira</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKEPHFJ82D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NKEPHFJ82D');
+  </script>
+  <link rel="stylesheet" href="layer3.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- transcrição aqui -->
+    <h1>Revolta Praieira</h1>
+    <h2>Tempo e lugar</h2>
+    <p>Província de Pernambuco, de 1848 até 1850</p>
+    <h3>Motivos</h3>
+    <p>Os seus partidários eram insatisfeitos com a demissão daqueles na imprensa (censuras e liberdade de expressão). Eles estavam descontentes com o estado econômico em trabalho da maioria população baixa, com o domínio de poucos.</p>
+    <h3>Participantes</h3>
+    <p>Classe baixa econômica de Pernambuco</p>
+    <h3>Projeto</h3>
+    <p>Projetavam aprimorar a constituição Nacional com:</p>
+    <ul>
+      <li>voto livre e universal</li>
+      <li>liberdade de imprensa</li>
+      <li>trabalho sendo garantia</li>
+      <li>comércio a retalho só para Brasileiros</li>
+      <li>extinção do Poder Moderador</li>
+    </ul>
+    <h2>Resultado</h2>
+    <p>A luta durou poucos anos, na tentativa de conquistar Recife. Mas ela foi derrotada pelo Império após algumas vitórias.</p>
+
+    <p id="go_back"><a href="8ano.html">Voltar à página geral</a></p>
+
+    <div id="footer-placeholder"></div>
+
+  </div>
+
+  <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+  </script>
+</body>
+</html>
