@@ -26,21 +26,58 @@
       margin: 10px auto;
     }
 
+    .anos-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 32px 40px;
+      margin: 35px auto;
+      width: 100%;
+    }
+
+    .coluna-ano {
+      flex: 1 1 300px;
+      max-width: 480px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     h2.secao {
       font-family: monospace;
       color: #1C2F3F;
       font-size: 1.35em;
       font-weight: bold;
       font-style: italic;
-      margin: 35px auto;
-      padding: 14px 24px;
-      width: 95%;
-      max-width: 560px;
+      margin: 0 auto 18px;
+      padding: 14px 20px;
+      width: 100%;
       background-color: #A3D5F7;
-      border: 4px solid #1C2F3F;
+      border: none;
       border-radius: 10px;
       box-sizing: border-box;
       text-decoration: none;
+    }
+
+    .botoes-ano {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .botoes-ano a {
+      display: block;
+      width: 88%;
+      max-width: 400px;
+      text-decoration: none;
+    }
+
+    .botoes-ano button {
+      width: 100%;
+      margin: 0;
     }
 
     button {
@@ -118,10 +155,22 @@
         font-size: 0.9em;
       }
 
+      .anos-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+        margin: 28px auto;
+      }
+
+      .coluna-ano {
+        max-width: 400px;
+        width: 100%;
+      }
+
       h2.secao {
         font-size: 1.15em;
         padding: 10px 15px;
-        margin: 28px auto;
+        margin-bottom: 14px;
       }
 
       footer {
