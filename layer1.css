@@ -31,7 +31,8 @@
       color: #1C2F3F;
       font-size: 1.35em;
       font-weight: bold;
-      margin: 35px auto 10px;
+      font-style: italic;
+      margin: 35px auto;
       padding: 12px 20px;
       width: 90%;
       max-width: 400px;
@@ -128,7 +129,7 @@
       h2.secao {
         font-size: 1.15em;
         padding: 10px 15px;
-        margin-top: 28px;
+        margin: 28px auto;
       }
 
       footer {
