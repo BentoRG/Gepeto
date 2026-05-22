@@ -9,6 +9,7 @@
   const resultsBody = document.getElementById('busca-resultados-body');
 
   const contentCache = new Map();
+  const gradeLabel = root.dataset.gradeLabel || 'desta página';
 
   function normalizeText(text) {
     return text
@@ -136,7 +137,7 @@
 
     const entries = collectEntries();
     if (!entries.length) {
-      setStatus('Não há resumos cadastrados nesta página ainda.');
+      setStatus(`Não há resumos cadastrados no ${gradeLabel} ainda.`);
       resultsBox.hidden = true;
       return;
     }
@@ -145,23 +146,24 @@
     setStatus('Buscando nos resumos…');
     resultsBox.hidden = true;
 
-    const matches = [];
-
     try {
-      for (const entry of entries) {
-        try {
-          const content = await loadContent(entry.href);
-          const searchable = `${entry.title} ${entry.subject} ${entry.author} ${content}`;
-          if (matchesQuery(searchable, terms)) {
-            matches.push({
-              ...entry,
-              snippet: buildSnippet(content, terms),
-            });
-          }
-        } catch {
-          /* ignora resumo inacessível */
-        }
-      }
+      const matches = (
+        await Promise.all(
+          entries.map(async (entry) => {
+            try {
+              const content = await loadContent(entry.href);
+              const searchable = `${entry.title} ${entry.subject} ${entry.author} ${content}`;
+              if (!matchesQuery(searchable, terms)) return null;
+              return {
+                ...entry,
+                snippet: buildSnippet(content, terms),
+              };
+            } catch {
+              return null;
+            }
+          })
+        )
+      ).filter(Boolean);
 
       if (!matches.length) {
         setStatus(`Nenhum resumo encontrado para “${query}”.`);
