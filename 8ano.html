@@ -24,6 +24,30 @@
       Essa é a página geral do 8° ano do <i>Gepeto</i>! Procure aqui abaixo a matéria e o assunto do <i>resumo</i> que você precisa. <i>Sinta-se à vontade</i>.
     </h4>
 
+    <div id="busca-resumos" class="busca-resumos">
+      <label for="busca-input">Buscar palavras dentro dos resumos do 8° ano</label>
+      <div class="busca-campo">
+        <input type="search" id="busca-input" placeholder="Ex.: puberdade, triângulos, século XIX…" autocomplete="off" />
+        <button type="button" id="busca-btn">Buscar</button>
+      </div>
+      <p id="busca-status" class="busca-status"></p>
+      <div id="busca-resultados" class="busca-resultados section three" hidden>
+        <h2>Resultados da busca</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>ANO</th>
+              <th>COLÉGIO</th>
+              <th>MATÉRIA</th>
+              <th>ASSUNTO</th>
+              <th>AUTOR</th>
+            </tr>
+          </thead>
+          <tbody id="busca-resultados-body"></tbody>
+        </table>
+      </div>
+    </div>
+
     <ol>
       <li><a href="#math">Álgebra e Geometria</a></li>
       <li><a href="#port">Português</a></li>
@@ -230,6 +254,7 @@
 
 </div>
 
+  <script src="grade-search.js"></script>
   <script>
       fetch("footer.html")
         .then(response => response.text())
