@@ -26,6 +26,30 @@
       margin: 10px auto;
     }
 
+    h2.secao {
+      font-family: monospace;
+      color: #1C2F3F;
+      font-size: 1.35em;
+      font-weight: bold;
+      margin: 35px auto 10px;
+      padding: 12px 20px;
+      width: 90%;
+      max-width: 400px;
+      border: 4px solid #A3D5F7;
+      border-radius: 10px;
+      box-sizing: border-box;
+    }
+
+    h2.secao-fundamental {
+      background-color: #F9E270;
+      border-color: #FFB82E;
+    }
+
+    h2.secao-medio {
+      background-color: #A3D5F7;
+      border-color: #1C2F3F;
+    }
+
     button {
       font-family: monospace;
       padding: 20px;
@@ -99,6 +123,12 @@
 
       .subtitulo {
         font-size: 0.9em;
+      }
+
+      h2.secao {
+        font-size: 1.15em;
+        padding: 10px 15px;
+        margin-top: 28px;
       }
 
       footer {
