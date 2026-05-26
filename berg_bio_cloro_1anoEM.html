@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="logo.png" type="image/png">
+  <title>Cloro</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKEPHFJ82D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NKEPHFJ82D');
+  </script>
+  <link rel="stylesheet" href="layer3.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- transcrição aqui -->
+    <h1>Cloro</h1>
+    <p>FONTE PRINCIPAL: sal de cozinha (NaCl)</p>
+    <ul>
+      <li>O Cl⁻ forma o ácido gástrico (ácido produzido pelo estômago).</li>
+    </ul>
+    <p><strong>Obs:</strong> PH é o nível de acidez de algum ambiente, variando de 0 a 14. De 0 a 7 é ácido, 7 é neutro, e de 7 a 14 é alcalino ou básico. O que classifica é a quantidade de H⁺ (quanto mais dessa substância, mais ácido).</p>
+    <ul>
+      <li>O ácido gástrico (ácido clorídrico - HCl) tem ph = 2,0. Nenhuma outra parte do corpo humano, além do estômago, suporta tal nível de acidez.</li>
+      <li>O ambiente ácido do estômago é o ideal para as enzimas digestivas do estômago atuarem (sem o ácido não haveria digestão).</li>
+      <li>O ambiente ácido também cria um ambiente propício para a proteção contra bactérias (é portanto um ambiente bactericida).</li>
+      <li>O estômago é revestido internamente por um muco espesso, protegendo as paredes do estômago contra este ácido.</li>
+    </ul>
+    <h2>Maré alcalina</h2>
+    <ul>
+      <li>O sangue fica com menor concentração de H⁺, pois ele é deslocado para digerir comida no estômago, o que deixa o sangue mais alcalino, que nos dá sono.</li>
+      <li>Por isso que quando comemos ficamos com mais sono.</li>
+    </ul>
+
+    <p id="go_back"><a href="1anoEM.html">Voltar à página geral</a></p>
+
+    <div id="footer-placeholder"></div>
+
+  </div>
+
+  <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+  </script>
+</body>
+</html>
