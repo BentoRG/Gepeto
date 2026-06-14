@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="logo.png" type="image/png">
+  <title>Rei Lear</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKEPHFJ82D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NKEPHFJ82D');
+  </script>
+  <link rel="stylesheet" href="layer3.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- transcrição aqui -->
+    <h1>Rei Lear</h1>
+    <p>escrito em 1605</p>
+    <h2>Contexto</h2>
+    <ul>
+      <li>Inglaterra pré-cristã, 800 A.C.</li>
+      <li>A Inglaterra antes da invasão romana era dividida em diversos reinos celtas tribais.</li>
+      <li>Em um desses reinos, Lear era o rei.</li>
+    </ul>
+    <h3>Narrativa</h3>
+    <ul>
+      <li>O Rei Lear está para morrer, então decide dividir o reino entre suas três filhas: Goneril, Regan e Cordélia.</li>
+      <li>Para decidir quem ficaria com o que, Lear pede que elas expressem seu amor por ele.</li>
+      <li>Goneril e Regan, oportunistas, bajulam o pai, e ganham suas terras, enquanto Cordélia, honesta e sincera, e Lear não gosta disso.</li>
+      <li>Então, Cordélia é expulsa pelo pai.</li>
+      <li>Porém, as outras duas filhas começam a desprezar o pai.</li>
+      <li>Lear, percebendo que expulsou a única filha que o amava, fica louco e foge.</li>
+      <li>Cordélia havia fugido para a França, e volta com um exército para ajudar o pai.</li>
+      <li>Eles se encontram e se reconciliam.</li>
+      <li>Paralelamente, o Conde de Gloucester é traído por seu filho bastardo Edmund, que se volta contra o irmão.</li>
+      <li>Eles emboscam Cordélia e a envenenam.</li>
+      <li>Lear, desolado, morre de tristeza nos braços da filha. Fim.</li>
+    </ul>
+    <p>Shakespeare se inspirou, muitos dizem, nos mesmos textos que moveram Macbeth, mas usou diversas lendas celtas como base.</p>
+
+    <p id="go_back"><a href="1anoEM.html">Voltar à página geral</a></p>
+
+    <div id="footer-placeholder"></div>
+
+  </div>
+
+  <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+  </script>
+</body>
+</html>
