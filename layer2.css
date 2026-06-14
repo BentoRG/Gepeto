@@ -249,8 +249,11 @@
       }
 
       #busca-input {
-        flex: 0 0 auto;
+        flex: none;
         width: 100%;
+        height: auto;
+        min-height: 0;
+        line-height: normal;
       }
 
       #busca-btn {
