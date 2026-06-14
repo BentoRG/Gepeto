@@ -248,6 +248,11 @@
         flex-direction: column;
       }
 
+      #busca-input {
+        flex: 0 0 auto;
+        width: 100%;
+      }
+
       #busca-btn {
         width: 100%;
       }
