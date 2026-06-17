@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="logo.png" type="image/png">
+  <title>Relações Numéricas</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKEPHFJ82D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NKEPHFJ82D');
+  </script>
+  <link rel="stylesheet" href="layer3.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- transcrição aqui -->
+    <h1>Relações Numéricas</h1>
+    <h2>1. Massa atômica (MA)</h2>
+    <p>É a massa do átomo expressa em u ou u.m.a (unidade de massa atômica).</p>
+    <p>1u = 1/12 m c<sup>12</sup> ≈ 1 g.mol<sup>-1</sup></p>
+    <h3>Ex:</h3>
+    <ul>
+        <li>Na → 23 g/mol → 23u</li>
+        <li>Ca → 40 g.mol<sup>-1</sup> → 40u</li>
+        <li>C → 12 g.mol<sup>-1</sup> → 12u</li>
+        <li>O → 16 g/mol → 16u</li>
+    </ul>
+    <h2>2. Massa molecular (MM)</h2>
+    <p>É a massa da molécula expressa em u ou u.m.a.</p>
+    <h3>Ex:</h3>
+    <ul>
+        <li>H<sub>2</sub>O → 1.2 + 1.16 = 18 g/mol</li>
+        <li>CaCO<sub>3</sub> → 40.1 + 12.1 + 16.3 = 100 g.mol<sup>-1</sup></li>
+        <li>Na<sub>2</sub>SO<sub>4</sub> → 2.23 + 32.1 + 16.4 = 142 g.mol<sup>-1</sup></li>
+    </ul>
+    <h2>3. Mol (Quantidade de Matéria)</h2>
+    <p>É a grandeza correspondente ao n° de avogadro (NA).</p>
+    <p>NA = 6,02.10<sup>23</sup></p>
+    <h3>Ex:</h3>
+    <ul>
+        <li>1 mol de átomos = 6,02.10<sup>23</sup> átomos</li>
+        <li>1 mol de moléculas = 6,02.10<sup>23</sup> moléculas</li>
+        <li>1 mol de elétrons = 6,02.10<sup>23</sup> elétrons</li>
+    </ul>
+    <h3>Resumindo!</h3>
+    <ul>
+        <li><strong>Elemento químico:</strong> 1 mol de átomos - MA - 6,02.10<sup>23</sup> átomos</li>
+        <li><strong>Substância química:</strong> 1 mol de moléculas - MM - 6,02.10<sup>23</sup> moléculas</li>
+    </ul>
+
+    <p id="go_back"><a href="1anoEM.html">Voltar à página geral</a></p>
+
+    <div id="footer-placeholder"></div>
+
+  </div>
+
+  <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+  </script>
+</body>
+</html>
