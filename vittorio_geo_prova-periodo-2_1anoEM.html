@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="logo.png" type="image/png">
+  <title>Prova - Período 2</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKEPHFJ82D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NKEPHFJ82D');
+  </script>
+  <link rel="stylesheet" href="layer3.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- transcrição aqui -->
+    <h1>Prova - Período 2</h1>
+    <h2>Camadas da Terra</h2>
+    <ul>
+        <li><strong>Atmosfera:</strong> Camada gasosa que envolve a terra</li>
+        <li><strong>Hidrosfera:</strong> Camada de água</li>
+        <li><strong>Litosfera:</strong> Camada rochosa</li>
+        <li><strong>Biosfera:</strong> Camada de vida</li>
+    </ul>
+    <h2>Camadas internas</h2>
+    <h2>1. Crosta</h2>
+    <p>mais fina, fria e externa</p>
+    <ul>
+        <li>Sial (Continental)</li>
+        <li>Sima (Oceânica)</li>
+    </ul>
+    <p>Formada por placas rochosas que estão em equilíbrio isostático com a astenosfera (Camada Superior do manto).</p>
+    <p>Separada do manto pela descontinuidade de moho (Transição e sólido e líquida) 2,5.</p>
+
+    <p id="go_back"><a href="1anoEM.html">Voltar à página geral</a></p>
+
+    <div id="footer-placeholder"></div>
+
+  </div>
+
+  <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+  </script>
+</body>
+</html>
