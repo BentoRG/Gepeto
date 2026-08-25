@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="logo.png" type="image/png">
+  <title>Gil Vicente</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKEPHFJ82D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NKEPHFJ82D');
+  </script>
+  <link rel="stylesheet" href="layer3.css">
+</head>
+<body>
+  <div class="container">
+
+    <h1>Gil Vicente</h1>
+
+    <ul>
+      <li>É do gênero dramático, do humanismo, sendo português</li>
+      <li>Tendo vivido de 1465 - 1536, escreveu muitas obras, das quais muitas foram preservadas por um de seus filhos</li>
+      <li>Em 1502 escreve "Auto da Visitação", conhecido como "Monólogo do Vaqueiro", em que todas as falas são versos (portanto uma écloga). É um auto pastoril</li>
+    </ul>
+
+    <h3>Seguem os principais autos da moralidade:</h3>
+    <ul>
+      <li>Trilogia da barca
+        <ul>
+          <li>Auto da barca do Inferno</li>
+          <li>" do Purgatório</li>
+          <li>" da Glória</li>
+        </ul>
+      </li>
+      <li>Auto da Alma</li>
+    </ul>
+
+    <h3>Farsas:</h3>
+    <ul>
+      <li>Farsa de Inês Pereira</li>
+      <li>O Velho da Horta</li>
+    </ul>
+
+    <ul>
+      <li>Um auto é uma peça curta com temática religiosa, personagens alegóricos e moral da história</li>
+      <li>Personagens alegóricos são aqueles que representam o bem, o mal, a soberba</li>
+      <li>Cria em "rindo, corrigem-se os costumes", frase da comédia latina. Ou seja, mesmo nas peças mais pesadas cabe o humor</li>
+      <li>Escreve a "Farsa de Inês Pereira" com base num ditado popular, critica a vida das mulheres no séc XV e XVI</li>
+      <li>"Antes um jumento que me carregue, do que um cavalo que me derruba" é o tal ditado</li>
+      <li>Uma farsa é uma peça curta que faz críticas aos comportamentos humanos com personagens tipo, em que as situações são ridículas e/ou grosseiras, provocando o humor (riso nervoso) e tendo uma moral final</li>
+    </ul>
+
+    <p id="go_back"><a href="1anoEM.html">Voltar à página geral</a></p>
+
+    <div id="footer-placeholder"></div>
+
+  </div>
+
+  <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+  </script>
+</body>
+</html>
