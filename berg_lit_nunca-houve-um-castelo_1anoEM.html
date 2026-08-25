@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="logo.png" type="image/png">
+  <title>Nunca Houve Um Castelo</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKEPHFJ82D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NKEPHFJ82D');
+  </script>
+  <link rel="stylesheet" href="layer3.css">
+</head>
+<body>
+  <div class="container">
+
+    <h1>Nunca Houve Um Castelo</h1>
+    
+    <ul>
+      <li>Não é literatura memorialista, apesar de tratar com memórias.</li>
+      <li>Existem memórias individuais, coletivas e sociais. A coletiva é aquela passada de forma oral de geração em geração, portanto podendo ser modificada. A social são documentos sobre a história.</li>
+      <li>O livro aqui é uma mistura de memória social com ficção.</li>
+      <li>Começa a história "in media res" (no meio da história), e então há um flashback (analepse), assim como a Ilíada e a Odisseia.</li>
+      <li>Então conta sobre um passado, um tempo mítico, na linha cronológica (tempo histórico).</li>
+      <li>Há a presença do tempo psicológico que conta os pensamentos das personagens.</li>
+      <li>Também há o discurso indireto livre, às vezes em itálico (sem verbo de elocução, aspas ou travessão).</li>
+    </ul>
+
+    <p id="go_back"><a href="1anoEM.html">Voltar à página geral</a></p>
+
+    <div id="footer-placeholder"></div>
+
+  </div>
+
+  <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+  </script>
+</body>
+</html>
