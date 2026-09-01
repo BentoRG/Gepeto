@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="logo.png" type="image/png">
+  <title>Climas</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKEPHFJ82D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NKEPHFJ82D');
+  </script>
+  <link rel="stylesheet" href="layer3.css">
+</head>
+<body>
+  <div class="container">
+
+    <h1>Climas</h1>
+
+    <h2>Clima Polar</h2>
+    <ul>
+      <li>Poucas chuvas, mais geadas cobrindo a vegetação</li>
+      <li>Tundra é a vegetação baixa</li>
+    </ul>
+
+    <h2>Clima Temperado Subpolar</h2>
+    <ul>
+      <li>Taiga siberiana, pinheiros, florestas boreal</li>
+    </ul>
+
+    <h2>Clima Temperado Oceânico</h2>
+    <ul>
+      <li>Litorânea</li>
+      <li>Floresta temperada ou caduca ou caducifólia (folhas velhas caindo)</li>
+    </ul>
+
+    <h2>Clima Temperado Continental</h2>
+    <ul>
+      <li>Amplitude térmica grande</li>
+      <li>Pântanos / estepes / pradarias</li>
+    </ul>
+
+    <h2>Clima Temperado Mediterrâneo</h2>
+    <ul>
+      <li>Verão quente e seco; inverno frio e úmido</li>
+      <li>Vegetação mediterrânea, bosques ou arbustos</li>
+      <li>As chuvas são mais intensas no inverno</li>
+    </ul>
+
+    <h2>Clima equatorial</h2>
+    <ul>
+      <li>Amplitude térmica baixa (3)</li>
+      <li>1 estação ao ano (verão)</li>
+      <li>Índice pluviométrico abundante (+ de 2000 mm de chuva por ano)</li>
+      <li>Folhas verdes que nunca caem &rarr; vegetação perene. Floresta equatorial/amazônica.</li>
+      <li>Maior preservação da vegetação no longo termo, mas sofre mais desmatamento hoje</li>
+    </ul>
+
+    <h2>Clima tropical úmido</h2>
+    <ul>
+      <li>Maior amplitude térmica (15)</li>
+      <li>2 estações no ano (verão quente e úmido; inverno frio e seco)</li>
+      <li>Floresta tropical ou mata atlântica</li>
+      <li>Foi muito desmatada no passado, mas hoje é mais preservada</li>
+    </ul>
+
+    <h2>Clima tropical típico</h2>
+    <ul>
+      <li>Vegetação baixa com arbustos</li>
+      <li>Seu inverno é mais seco que o clima tropical úmido</li>
+      <li>Na África é chamada de savana, no Brasil cerrado</li>
+      <li>Muitas queimas naturais no inverno</li>
+    </ul>
+
+    <p><strong>OBS:</strong> HOTSPOTS (cerrado e mata atlântica)</p>
+    <ul>
+      <li>Mata em alto risco de extinção</li>
+    </ul>
+
+    <h2>Clima tropical semi-árido</h2>
+    <ul>
+      <li>Quase seco, por se localizar depois de áreas de alta altitude, que barram chuvas</li>
+    </ul>
+
+    <h2>Clima tropical de altitude</h2>
+    <ul>
+      <li>É mais frio que os outros</li>
+    </ul>
+
+    <h2>Clima subtropical</h2>
+    <ul>
+      <li>4 estações bem definidas</li>
+      <li>Mata das araucárias (pinheiros)</li>
+    </ul>
+
+    <p><strong>OBS:</strong> arbóreas (árvores altas), herbáceas (mata baixa) e herbácea-arbustiva (mata média com baixa)</p>
+
+    <p id="go_back"><a href="1anoEM.html">Voltar à página geral</a></p>
+
+    <div id="footer-placeholder"></div>
+
+  </div>
+
+  <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+  </script>
+</body>
+</html>
