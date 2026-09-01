@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="logo.png" type="image/png">
+  <title>Cartografia</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKEPHFJ82D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NKEPHFJ82D');
+  </script>
+  <link rel="stylesheet" href="layer3.css">
+</head>
+<body>
+  <div class="container">
+
+    <h1>Cartografia</h1>
+    
+    <p>Conjunto de técnicas científicas e artísticas que visa a elaboração de documentos que representem uma determinada localidade</p>
+    
+    <p>Pode ser usado para estratégias de guerra, conhecer e pontuar riquezas naturais, apontar os melhores espaços agrícolas</p>
+
+    <h2>Tipos</h2>
+    <ul>
+      <li><strong>Croqui:</strong> não representa fielmente os lugares</li>
+      <li><strong>Planta:</strong> se usa em áreas pequenas. Tem muitos detalhes</li>
+      <li><strong>Mapa:</strong> representa áreas maiores. Representações planas da superfície. Possui distorções e conteúdo ideológico</li>
+    </ul>
+
+    <h3>Projeção</h3>
+    <ul>
+      <li><strong>Conforme:</strong> valoriza distância</li>
+      <li><strong>Equidistante:</strong> valoriza distância</li>
+      <li><strong>Equivalente:</strong> valoriza área</li>
+      <li><strong>Arbitrária ou afilática:</strong> distorce na mesma proporção, área, forma e distância</li>
+      <li><strong>Cilíndrica:</strong> permite representar grandes áreas com facilidade, embora distorça bastante as regiões próximas aos polos</li>
+      <li><strong>Cônica:</strong> É excelente para representar regiões de latitudes médias, como países ou continentes, porque as distorções aumentam à medida que se afastam da linha de contato do cone com a esfera</li>
+      <li><strong>Azimutal ou Plana:</strong> Aqui, a superfície de projeção é um plano que toca o globo em um ponto específico (geralmente nos polos ou em qualquer outro ponto de interesse). É muito utilizada para mapas que focam em rotas aéreas ou em regiões polares, pois mantém uma boa precisão ao redor do ponto de contato central.</li>
+    </ul>
+
+    <h2>Cálculo de escala</h2>
+    <p>D = d . e (Distância = distância cartográfica vezes escala)</p>
+
+    <h2>Projeções especiais</h2>
+    <ul>
+      <li><strong>Mercator:</strong> eurocêntrica / projeção conforme / altas latitudes = maiores deformações</li>
+      <li><strong>Robinson:</strong> pseudo cilíndrica afilática / minimiza distorções / não preserva forma, área ou distância / a vantagem é ser o meio termo entre Mercator e Petters</li>
+      <li><strong>Petters:</strong> projeção cilíndrica e equivalente / busca uma projeção na qual os países de terceiro mundo fossem fortalecidos, mostrando seu tamanho real em relação aos de primeiro mundo / mantém a dimensão proporcional das terras emersas</li>
+      <li><strong>Anamorfose:</strong> converte números em mapas / áreas de um país ou continente assumem o tamanho proporcional ao dado que quer se mostrar</li>
+    </ul>
+
+    <p id="go_back"><a href="1anoEM.html">Voltar à página geral</a></p>
+
+    <div id="footer-placeholder"></div>
+
+  </div>
+
+  <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+  </script>
+</body>
+</html>
