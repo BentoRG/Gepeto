@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="logo.png" type="image/png">
+  <title>População</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKEPHFJ82D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NKEPHFJ82D');
+  </script>
+  <link rel="stylesheet" href="layer3.css">
+</head>
+<body>
+  <div class="container">
+
+    <h1>População</h1>
+
+    <ul>
+      <li><strong>População:</strong> conjunto de indivíduos que habitam mesmo espaço</li>
+      <li><strong>Nação:</strong> conjunto de características culturais, tradições, língua, costumes, entre outros fatores que formam uma identidade pela qual os indivíduos se identificam e se sentem partes de um grupo</li>
+      <li><strong>População absoluta:</strong> total de habitantes de um determinado espaço geográfico. Chamamos de populoso os países que possuem elevada população absoluta</li>
+      <li><strong>População relativa ou densidade demográfica:</strong> a média de pessoas por KM² do território.</li>
+    </ul>
+
+    <p>Para calcular, se usa: população relativa= pop. absoluta sobre área</p>
+
+    <ul>
+      <li><strong>Crescimento vegetativo:</strong> diferença entre taxa de natalidade e mortalidade</li>
+      <li><strong>Taxa de migração:</strong> imigração - emigração</li>
+      <li><strong>Taxa de natalidade:</strong> Nº de nascimentos vezes mil sobre Nº de habitantes</li>
+      <li><strong>Taxa de mortalidade:</strong> Nº de óbitos vezes mil sobre Nº de habitantes</li>
+      <li><strong>Crescimento vegetativo:</strong> pode ser baixo, estagnado, elevado/acelerado ou negativo</li>
+      <li><strong>Taxa de fecundidade:</strong> estimativa do Nº médio de filhos que uma mulher teria até o fim de seu período reprodutivo (15 a 49 anos)</li>
+      <li>2,1 é o Nº médio de filhos por mulher necessário para manter a população de um país a um nível constante</li>
+      <li><strong>Mortalidade infantil:</strong> Nº de óbitos ocorridos entre 0 e 1 anos de idade</li>
+      <li><strong>Expectativa de vida:</strong> Nº de anos que espera-se que o indivíduo viva se forem mantidas as condições atuais</li>
+      <li><strong>Crescimento demográfico:</strong> soma do crescimento vegetativo e taxa de imigração</li>
+    </ul>
+
+    <p id="go_back"><a href="1anoEM.html">Voltar à página geral</a></p>
+
+    <div id="footer-placeholder"></div>
+
+  </div>
+
+  <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+  </script>
+</body>
+</html>
