@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="logo.png" type="image/png">
+  <title>Arte Indígena no Brasil</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKEPHFJ82D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NKEPHFJ82D');
+  </script>
+  <link rel="stylesheet" href="layer3.css">
+</head>
+<body>
+  <div class="container">
+
+    <h1>Arte Indígena no Brasil</h1>
+
+    <h3>Panorama da arte BR com a chegada dos portugueses:</h3>
+    <ul>
+      <li>Indígenas eram considerados selvagens.</li>
+      <li>Tipo de arte: plumária, cerâmica e pintura corporal.</li>
+    </ul>
+
+    <h3>Arte Pré-cabralina</h3>
+    <ul>
+      <li>A arte indígena é sucessora das pinturas rupestres.</li>
+      <li>A principal manifestação da arte era a ornamentação corporal à base de 2 cores: vermelho e preto.</li>
+      <li>As pinturas eram usadas p/ identificar de q grupo social o indivíduo pertencia.</li>
+      <li>O indígena procurava se diferenciar dos animais, fazendo uma diferença entre a natureza e sua própria cultura.</li>
+      <li>A ornamentação possui padrões geométricos ou signos convencionais.</li>
+    </ul>
+
+    <p id="go_back"><a href="1anoEM.html">Voltar à página geral</a></p>
+
+    <div id="footer-placeholder"></div>
+
+  </div>
+
+  <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+  </script>
+</body>
+</html>
