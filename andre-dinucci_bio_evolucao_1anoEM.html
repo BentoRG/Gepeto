@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="logo.png" type="image/png">
+  <title>Evolucão</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKEPHFJ82D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NKEPHFJ82D');
+  </script>
+  <link rel="stylesheet" href="layer3.css">
+</head>
+<body>
+  <div class="container">
+
+    <h1>Evolucão</h1>
+
+    <p>Processo de mudanças nas populações ao longo do tempo</p>
+
+    <h2>Evidências da evolução</h2>
+
+    <h3>Fósseis</h3>
+    <ul>
+      <li>Restos / vestígios de seres vivos preservados ao longo do tempo</li>
+      <li>Permitem entender o surgimento de grupos e extinção de outros</li>
+      <li>Com fósseis dá para comparar espécies do passado com atuais</li>
+      <li>Encontrado em rochas sedimentares</li>
+    </ul>
+
+    <h2>Observações diretas por estudos científicos</h2>
+    <ul>
+      <li>Permitem detectar mudanças nas populações a partir de dados coletados na natureza</li>
+    </ul>
+
+    <p>EX: Variação no aparato bucal sugador do percevejo - do - saboeiro</p>
+
+    <h2>Área natural</h2>
+    <ul>
+      <li>Espécie se alimenta da seiva de árvores de grande porte</li>
+      <li>Indivíduos com sugadores maiores eram favorecidos</li>
+    </ul>
+
+    <h2>Áreas com introdução de uma espécie exótica</h2>
+    <ul>
+      <li>Árvore exótica menor que as nativas</li>
+      <li>Se proliferaram rápido</li>
+      <li>Indivíduos com aparatos menores foram favorecidos e se tornaram abundantes</li>
+    </ul>
+
+    <h2>Anatomia comparada</h2>
+
+    <h2>Órgãos homólogos</h2>
+    <ul>
+      <li>Indivíduos possuem origem evolutiva comum</li>
+      <li>Padrão estrutural e origem embrionária semelhantes</li>
+      <li>As populações passaram por pressões seletivas diferentes em cada novo nicho ecológico</li>
+      <li>Geralmente fazem funções diferentes</li>
+    </ul>
+
+    <h2>Órgãos análogos</h2>
+    <ul>
+      <li>Não derivam do mesmo ancestral comum</li>
+      <li>Padrão estrutural e origem embrionária distintas</li>
+      <li>Mecanismo evolutivo é a convergência adaptativa</li>
+      <li>Populações passam por pressões seletivas semelhantes vivendo no mesmo ambiente</li>
+      <li>Desenvolvem a mesma função</li>
+    </ul>
+
+    <p id="go_back"><a href="1anoEM.html">Voltar à página geral</a></p>
+
+    <div id="footer-placeholder"></div>
+
+  </div>
+
+  <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+  </script>
+</body>
+</html>
