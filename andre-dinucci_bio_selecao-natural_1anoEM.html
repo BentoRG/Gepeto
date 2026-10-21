@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="logo.png" type="image/png">
+  <title>Seleção Natural</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKEPHFJ82D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NKEPHFJ82D');
+  </script>
+  <link rel="stylesheet" href="layer3.css">
+</head>
+<body>
+  <div class="container">
+
+    <h1>Seleção Natural</h1>
+
+    <h3>Tipos:</h3>
+    <ul>
+      <li>Estabilizada: seleciona indivíduos com fenótipos intermediários e exclui fenótipos extremos (fenótipo é conjunto de características observáveis de um organismo — como a cor dos olhos, altura, tipo sanguíneo ou até determinados comportamentos. Ele é resultado da interação do seu código genético (o genótipo) com o meio ambiente).</li>
+      <li>Direcional: seleciona um dos fenótipos extremos e exclui os outros</li>
+      <li>Disruptiva: seleciona 2 fenótipos extremos e exclui intermediários</li>
+    </ul>
+
+    <h2>Deriva genética</h2>
+    <p>Variação na frequência alélica de maneira ALEATÓRIA</p>
+    <p>A deriva genética é a mudança na frequência de certos genes (alelos) em uma população devido a eventos aleatórios, e não por seleção. Em um exemplo de deriva genética, imagine que, em uma população de besouros, a cor verde e a cor marrom são determinadas geneticamente. Se, por puro azar (como um pisão acidental de alguém ou uma catástrofe natural), a maioria dos besouros verdes for eliminada, a frequência do gene para a cor verde cairá drasticamente na geração seguinte, simplesmente porque esses indivíduos não tiveram a chance de deixar descendentes.</p>
+
+    <h2>Efeito gargalo</h2>
+    <p>Evento repentino que provoca a morte de indivíduos da população de forma abrupta e aleatória, podendo ser por desastres naturais ou ações antrópicas</p>
+
+    <h2>Efeito fundador</h2>
+    <p>Um grupo de indivíduos, de forma aleatória, é levado para uma nova área, fundando uma nova população com variabilidade menor que a original</p>
+
+    <h3>Em uma explicação melhor:</h3>
+    <p>O Efeito Fundador acontece quando um grupo muito pequeno de indivíduos se isola (por qualquer que seja o motivo) para criar uma nova população em um local diferente.</p>
+    <ul>
+      <li>A nova população só terá os genes dos poucos fundadores que migraram.</li>
+      <li>A diversidade genética é muito menor do que a da população original.</li>
+      <li>Características raras dos fundadores podem se tornar comuns na nova população por puro acaso, não porque sejam vantajosas.</li>
+    </ul>
+
+    <p id="go_back"><a href="1anoEM.html">Voltar à página geral</a></p>
+
+    <div id="footer-placeholder"></div>
+
+  </div>
+
+  <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+  </script>
+</body>
+</html>
