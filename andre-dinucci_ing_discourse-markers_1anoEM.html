@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="logo.png" type="image/png">
+  <title>Discourse Markers</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKEPHFJ82D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NKEPHFJ82D');
+  </script>
+  <link rel="stylesheet" href="layer3.css">
+</head>
+<body>
+  <div class="container">
+
+    <h1>Discourse Markers</h1>
+
+    <p>THUS → POR ISSO (Expressa um resultado, consequência ou conclusão lógica)</p>
+    
+    <p>INDEED → DE FATO (Enfatiza, confirma ou reforça uma afirmação)</p>
+    
+    <p>NEVERTHELESS → NO ENTANTO (contraste ou concessão inesperados)</p>
+    
+    <p>MOREOVER → ALÉM DISSO (Adiciona evidências ou informações de apoio complementares)</p>
+    
+    <p>SUCH AS → COMO (Apresenta exemplos específicos para esclarecer ou ilustrar uma categoria geral ou um substantivo)</p>
+    
+    <p>ON THE CONTRARY → PELO CONTRÁRIO (Nega ou refuta uma afirmação anterior e apresenta a verdade exatamente oposta)</p>
+    
+    <p>IN ORDER TO → A FIM DE (propósito ou intenção)</p>
+    
+    <p>DESPITE → APESAR DE (contraste ou concessão) (Deve ser seguido diretamente por um substantivo ou gerúndio (-ING))</p>
+    
+    <p>IN SPITE OF → APESAR DE (é gramatical e semanticamente idêntico a despite)</p>
+    
+    <p>ALTHOUGH → EMBORA (contraste ou concessão. Diferente de despite e in spite of, deve ser seguido por uma oração completa, contendo sujeito e verbo)</p>
+    
+    <p>SINCE → VISTO QUE (causa, motivo ou justificativa)</p>
+
+    <p>OWING TO → DEVIDO A (causa ou motivo)</p>
+    
+    <p>HOWEVER → NO ENTANTO (contraste ou oposição marcante)</p>
+    
+    <p>YET → PORÉM (contraste surpreendente ou inesperado)</p>
+    
+    <p>OVERALL → EM GERAL (Apresenta um resumo, uma conclusão geral ou uma avaliação abrangente após considerar todos os detalhes individuais)</p>
+    
+    <p>ADDITIONALLY → ADICIONALMENTE / ALÉM DO MAIS (Acrescenta informações suplementares e de reforço, ou um ponto de apoio adicional a uma afirmação)</p>
+    
+    <p>AND → E (conecta palavras, expressões ou orações independentes de mesma função gramatical, indicando adição ou uma simples continuidade)</p>
+
+    <p id="go_back"><a href="1anoEM.html">Voltar à página geral</a></p>
+
+    <div id="footer-placeholder"></div>
+
+  </div>
+
+  <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+  </script>
+</body>
+</html>
