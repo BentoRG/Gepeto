@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="logo.png" type="image/png">
+  <title>Idiomatic Expression</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKEPHFJ82D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NKEPHFJ82D');
+  </script>
+  <link rel="stylesheet" href="layer3.css">
+</head>
+<body>
+  <div class="container">
+
+    <h1>Idiomatic Expression</h1>
+    
+    <ul>
+      <li>AT THE EXPENSE OF → ÀS CUSTAS DE</li>
+      <li>TURN A BLIND EYE TO → IGNORAR</li>
+      <li>GO TO GREAT LENGTHS → FAZER ESFORÇOS EXTREMOS</li>
+      <li>IN THE LONG RUN → A LONGO PRAZO</li>
+      <li>BITE THE BULLET → ENFRENTAR ALGO INEVITÁVEL</li>
+      <li>TAKE FOR GRANTED → Deixar de valorizar algo por ser familiar ou dado como certo.</li>
+      <li>A DOUBLE-EDGED SWORD → "faca de dois gumes" Uma característica ou situação que apresenta efeitos tanto positivos quanto negativos</li>
+    </ul>
+
+    <h2>DISCOURSE MARKERS</h2>
+
+    <p id="go_back"><a href="1anoEM.html">Voltar à página geral</a></p>
+
+    <div id="footer-placeholder"></div>
+
+  </div>
+
+  <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+  </script>
+</body>
+</html>
