@@ -184,3 +184,112 @@
     if (e.key === 'Enter') runSearch();
   });
 })();
+
+// Remembers where the reader was on this grade page and returns them there
+// after "Voltar à página geral". history.back() restores the browser's own
+// scroll position; this covers summaries that still navigate with a plain link.
+(function () {
+  const KEY = 'gepeto-return-scroll';
+
+  function pageName() {
+    return location.pathname.split('/').pop() || 'index.html';
+  }
+
+  function fileFromHref(href) {
+    if (!href || href.startsWith('#') || href.startsWith('mailto:')) return null;
+    let url;
+    try {
+      url = new URL(href, location.href);
+    } catch {
+      return null;
+    }
+    if (url.origin !== location.origin) return null;
+    const file = decodeURIComponent(url.pathname.split('/').pop() || '');
+    if (!file.endsWith('.html')) return null;
+    if (file === pageName() || file === 'index.html') return null;
+    if (/^\d+ano(EM)?\.html$/.test(file)) return null;
+    return file;
+  }
+
+  function readReturn() {
+    try {
+      return JSON.parse(sessionStorage.getItem(KEY) || 'null');
+    } catch {
+      return null;
+    }
+  }
+
+  function referrerFile() {
+    try {
+      const ref = new URL(document.referrer);
+      if (ref.origin !== location.origin) return '';
+      return decodeURIComponent(ref.pathname.split('/').pop() || '');
+    } catch {
+      return '';
+    }
+  }
+
+  function findSummaryLink(file) {
+    const links = document.querySelectorAll('a[href]');
+    for (const link of links) {
+      if (fileFromHref(link.getAttribute('href')) === file) return link;
+    }
+    return null;
+  }
+
+  function place(y, file) {
+    const apply = () => {
+      window.scrollTo(0, y);
+      const link = findSummaryLink(file);
+      if (!link) return;
+      const rect = link.getBoundingClientRect();
+      const visible = rect.bottom > 0 && rect.top < window.innerHeight;
+      if (!visible) (link.closest('tr') || link).scrollIntoView({ block: 'center' });
+    };
+    apply();
+    requestAnimationFrame(apply);
+  }
+
+  document.addEventListener('click', (event) => {
+    const target = event.target;
+    const link = target instanceof Element ? target.closest('a') : null;
+    if (!link) return;
+    const file = fileFromHref(link.getAttribute('href'));
+    if (!file) return;
+    const section = link.closest('.section');
+    sessionStorage.setItem(KEY, JSON.stringify({
+      page: pageName(),
+      file,
+      y: window.scrollY,
+      sectionId: section && section.id ? section.id : '',
+    }));
+  }, true);
+
+  function restore(navType) {
+    const data = readReturn();
+    if (!data || data.page !== pageName()) return;
+    if (referrerFile() !== data.file) return;
+    sessionStorage.removeItem(KEY);
+
+    if (navType === 'back_forward' && window.scrollY > 48) return;
+
+    if (typeof data.y === 'number') {
+      if (history.scrollRestoration) history.scrollRestoration = 'manual';
+      place(data.y, data.file);
+      return;
+    }
+    if (data.sectionId) document.getElementById(data.sectionId)?.scrollIntoView();
+  }
+
+  window.addEventListener('pageshow', (event) => {
+    if (event.persisted && window.scrollY > 48) {
+      const data = readReturn();
+      if (data && data.page === pageName() && referrerFile() === data.file) {
+        sessionStorage.removeItem(KEY);
+      }
+      return;
+    }
+    const nav = performance.getEntriesByType('navigation')[0];
+    restore(nav ? nav.type : '');
+  });
+})();
