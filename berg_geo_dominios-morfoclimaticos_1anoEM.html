@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="logo.png" type="image/png">
+  <title>Domínios Morfoclimáticos</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKEPHFJ82D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NKEPHFJ82D');
+  </script>
+  <link rel="stylesheet" href="layer3.css">
+</head>
+<body>
+  <div class="container">
+
+    <h1>Domínios Morfoclimáticos</h1>
+
+    <ul>
+        <li>No Amazonas (NORTE) tem-se calor e bacia hidrográfica, formando (evapotranspiração) nuvens &rarr; Clima equatorial úmido, com florestas equatoriais</li>
+        <li>Rios, Igapó, Várzea e Terra Firme</li>
+    </ul>
+
+    <h2>No Nordeste tem-se clima tropical úmido; bem como no Sudeste</h2>
+    <ul>
+        <li>"Mata Atlântica"</li>
+        <li>&plusmn; 30% mata nativa - Hotspot</li>
+        <li>Extração vegetal (no Brasil colônia &rarr; Pau Brasil)</li>
+        <li>Plantations</li>
+        <li>Mineração</li>
+        <li>Urbanização</li>
+    </ul>
+
+    <h3>No Centro-Oeste, clima tropical típico:</h3>
+    <ul>
+        <li>Planície pantanal (complexo do pantanal)</li>
+        <li>Matas ciliares + cerrado</li>
+        <li>Hotspot (causas: agricultura, pecuária e urbanização)</li>
+    </ul>
+
+    <p><strong>OBS:</strong> Nordeste = zona da mata + agreste oriental + "Polígono das secas" (agreste ocidental + sertão; tropical semi-árido; caatinga)</p>
+
+    <h3>No Sul clima subtropical:</h3>
+    <ul>
+        <li>mata das araucárias (presente na Argentina e Uruguai também)</li>
+        <li>pampas</li>
+    </ul>
+
+    <p id="go_back"><a href="1anoEM.html">Voltar à página geral</a></p>
+
+    <div id="footer-placeholder"></div>
+
+  </div>
+
+  <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+  </script>
+</body>
+</html>
