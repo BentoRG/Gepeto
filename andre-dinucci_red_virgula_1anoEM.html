@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="logo.png" type="image/png">
+  <title>Vírgula</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKEPHFJ82D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NKEPHFJ82D');
+  </script>
+  <link rel="stylesheet" href="layer3.css">
+</head>
+<body>
+  <div class="container">
+
+    <h1>Vírgula</h1>
+
+    <p>→ Usada para separar expressões em uma frase, enfatizar e impedir ambiguidade</p>
+
+    <h2>Uso obrigatório da vírgula</h2>
+
+    <h2>1) Separar termo de mesma função sintática</h2>
+    <p>Ex: Doei a ele um relógio, uma camisa e um terno.</p>
+    <p>(Doei (VERBO TRANSITIVO DIRETO E INDIRETO) a ele (OBJETO INDIRETO) um relógio, uma camisa e um terno (OBJETO DIRETO))</p>
+    <p>um relógio, uma camisa e um terno → tem a mesma função de objeto direto, assim você separa eles com vírgula</p>
+
+    <h2>2) Isolar vocativo</h2>
+    <p>Vocativo: aquilo que se evoca</p>
+    <p>Ex: Filho, desça já daí / Desça já daí, filho / Desça, filho, daí</p>
+
+    <h2>3) Isolar o aposto explicativo</h2>
+    <p>Ex: Alexandre, REI DA MACEDÔNIA, venceu a guerra</p>
+
+    <h2>4) Separar local e data</h2>
+    <p>Ex: São Paulo, 2 de outubro de 2026</p>
+
+    <h2>5) Marcar a elipse (zeugma) de um verbo</h2>
+    <p>Ex: Vou ao cinema, minha irmã, também (vai)</p>
+
+    <h2>6) Isolar expressões exemplificativas ou retificadoras</h2>
+    <p>Ex: Eu, POR EXEMPLO, gosto de viajar / Eu não irei à festa dele, OU MELHOR, eu jamais iria a qualquer festa dele</p>
+
+    <p id="go_back"><a href="1anoEM.html">Voltar à página geral</a></p>
+
+    <div id="footer-placeholder"></div>
+
+  </div>
+
+  <script src="return-to-section.js"></script>
+  <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+  </script>
+</body>
+</html>
