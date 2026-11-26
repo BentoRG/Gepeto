@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="logo.png" type="image/png">
+  <title>Tudo do ano</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKEPHFJ82D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NKEPHFJ82D');
+  </script>
+  <link rel="stylesheet" href="layer3.css">
+</head>
+<body>
+  <div class="container">
+
+    <h1>Tudo do ano</h1>
+    <p>Guia de Estudos</p>
+    <p>Conjuntos e funções afins, quadráticas, exponenciais e logarítmicas</p>
+    <p>1º EM - Álgebra</p>
+    <p>&in; &cup; f(x) x<sup>2</sup> e<sup>x</sup> log</p>
+
+    <h2>Conjuntos</h2>
+    <p>Agrupamentos de elementos, relações e operações</p>
+    
+    <h2>Notação e Relações</h2>
+    <p>Um conjunto é uma coleção de elementos; a ordem e as repetições não importam: {1, 2, 3} = {3, 1, 2, 2}.</p>
+    
+    <h2>Formas de Representar</h2>
+    <ul>
+      <li>Enumeração: A = {2, 4, 6, 8}</li>
+      <li>Propriedade: A = {x | x é par e 0 &lt; x &lt; 10}</li>
+      <li>Diagrama de Venn: região fechada com os elementos dentro</li>
+    </ul>
+
+    <h3>Símbolos</h3>
+    <ol>
+      <li>&in; / &notin; — pertence / não pertence (elemento &times; conjunto). Ex.: 2 &in; A</li>
+      <li>&sub; / &nsub; — está contido / não está contido (conjunto &times; conjunto). Ex.: {2} &sub; A</li>
+      <li>&empty; — conjunto vazio, subconjunto de todo conjunto</li>
+      <li>n(A) — número de elementos (cardinalidade) de A</li>
+    </ol>
+    <p>Erro clássico: pertinência liga elemento a conjunto (2 &in; A); inclusão liga conjunto a conjunto (A &sub; B). Um conjunto com n elementos tem 2<sup>n</sup> subconjuntos.</p>
+
+    <h2>Operações entre Conjuntos</h2>
+    <ul>
+      <li>União (A &cup; B): elementos que estão em A ou em B</li>
+      <li>Interseção (A &cap; B): elementos que estão em A e em B. Se A &cap; B = &empty;, os conjuntos são disjuntos</li>
+      <li>Diferença (A - B): elementos de A que não estão em B</li>
+      <li>Complementar (A<sup>C</sup>): o que falta em A para chegar ao universo U (vale se A &sub; U): A<sup>C</sup> = U - A</li>
+    </ul>
+
+    <h3>Exemplo</h3>
+    <p>A = {1, 2, 3, 4} e B = {3, 4, 5}</p>
+    <p>A &cup; B = {1, 2, 3, 4, 5} &middot; A &cap; B = {3, 4}</p>
+    <p>A - B = {1, 2} &middot; B - A = {5}</p>
+    <p>n(A &cup; B) = n(A) + n(B) - n(A &cap; B)</p>
+    <p>A diferença não é comutativa: A - B &ne; B - A. A fórmula acima evita contar duas vezes os elementos da interseção.</p>
+
+    <h2>Conjuntos Numéricos e Intervalos</h2>
+    <p>Do contar ao medir; a hierarquia dos números</p>
+
+    <h2>Conjuntos Numéricos</h2>
+    <table>
+      <tr>
+        <th>Conjunto</th>
+        <th>Elementos</th>
+        <th>Exemplos</th>
+      </tr>
+      <tr>
+        <td>N naturais</td>
+        <td>contagem: 0, 1, 2, 3...</td>
+        <td>0, 7, 120</td>
+      </tr>
+      <tr>
+        <td>Z inteiros</td>
+        <td>naturais e seus opostos</td>
+        <td>-5, 0, 3</td>
+      </tr>
+      <tr>
+        <td>Q racionais</td>
+        <td>frações a/b (b &ne; 0); decimais finitos ou dízimas periódicas</td>
+        <td>&frac12;, -0,75, 0,333...</td>
+      </tr>
+      <tr>
+        <td>I irracionais</td>
+        <td>decimais infinitos e não periódicos</td>
+        <td>&pi;, &radic;2, e</td>
+      </tr>
+      <tr>
+        <td>R reais</td>
+        <td>racionais &cup; irracionais</td>
+        <td>todos acima</td>
+      </tr>
+    </table>
+    <p>N &sub; Z &sub; Q &sub; R &middot; Q &cup; I = R &middot; Q &cap; I = &empty;</p>
+    <p>Asteriscos e sinais: R* tira o zero; R<sub>+</sub> são os reais &ge; 0; R<sub>-</sub>* são os reais &lt; 0. Eles aparecem nos domínios de funções.</p>
+
+    <h2>Intervalos Reais</h2>
+    <table>
+      <tr>
+        <th>Tipo</th>
+        <th>Notação de intervalo</th>
+        <th>Desigualdade</th>
+      </tr>
+      <tr>
+        <td>Fechado</td>
+        <td>[a, b]</td>
+        <td>a &le; x &le; b</td>
+      </tr>
+      <tr>
+        <td>Aberto</td>
+        <td>(a, b) ou ]a, b[</td>
+        <td>a &lt; x &lt; b</td>
+      </tr>
+      <tr>
+        <td>Semiaberto</td>
+        <td>[a, b) ou (a, b]</td>
+        <td>a &le; x &lt; b &middot; a &lt; x &le; b</td>
+      </tr>
+      <tr>
+        <td>Ilimitado</td>
+        <td>[a, +&infin;) &middot; (-&infin;, b)</td>
+        <td>x &ge; a &middot; x &lt; b</td>
+      </tr>
+    </table>
+    <p>Colchete fechado inclui a extremidade (bolinha cheia); parêntese ou colchete invertido exclui (bolinha vazia). Infinito sempre fica com parêntese.</p>
+
+    <h2>Problemas com Diagrama de Venn</h2>
+    <p>Estratégia: preencher sempre de dentro para fora — comece pela interseção e depois subtraia.</p>
+    <p>Em uma turma de 40 alunos, 25 praticam vôlei, 18 praticam basquete e 8 praticam os dois. Quantos não praticam nenhum?</p>
+    <ul>
+      <li>Interseção: 8</li>
+      <li>Só vôlei: 25 - 8 = 17 &middot; Só basquete: 18 - 8 = 10</li>
+      <li>Praticam algum: 17 + 8 + 10 = 35</li>
+      <li>Nenhum: 40 - 35 = 5</li>
+    </ul>
+
+    <h2>Noções de Função</h2>
+    <p>Relações em que cada x tem exatamente um y</p>
+
+    <h2>Definição e Elementos</h2>
+    <p>Uma função f: A &rarr; B associa a cada elemento x de A um único elemento y de B. Escrevemos y = f(x).</p>
+    <ol>
+      <li>Domínio D(f): conjunto de partida A — valores de x permitidos</li>
+      <li>Contradomínio: conjunto de chegada B</li>
+      <li>Imagem Im(f): valores de y que realmente aparecem (Im &sub; B)</li>
+      <li>Raiz (zero): valor de x com f(x) = 0 — onde o gráfico cruza o eixo x</li>
+    </ol>
+    <p>Teste da reta vertical: se alguma reta vertical cruza o gráfico em mais de um ponto, não é função. Para achar o domínio, exclua divisão por zero e raiz de número negativo.</p>
+
+    <h2>Tipos de Função</h2>
+    <ol>
+      <li>Injetora: elementos diferentes têm imagens diferentes (x<sub>1</sub> &ne; x<sub>2</sub> &rArr; f(x<sub>1</sub>) &ne; f(x<sub>2</sub>))</li>
+      <li>Sobrejetora: Im(f) = contradomínio (ninguém fica sem par)</li>
+      <li>Bijetora: injetora e sobrejetora ao mesmo tempo — admite função inversa</li>
+      <li>Crescente / decrescente: x<sub>1</sub> &lt; x<sub>2</sub> &rArr; f(x<sub>1</sub>) &lt; f(x<sub>2</sub>) / f(x<sub>1</sub>) &gt; f(x<sub>2</sub>)</li>
+    </ol>
+
+    <h2>Composta e Inversa</h2>
+    <ul>
+      <li>Composta: (f &deg; g)(x) = f(g(x)) — aplica g primeiro, depois f</li>
+      <li>Inversa f<sup>-1</sup>: desfaz f; troque x por y e isole y. Os gráficos são simétricos em relação à reta y = x</li>
+    </ul>
+    <p>f(x) = 2x + 3 &rarr; x = 2y + 3 &rarr; f<sup>-1</sup>(x) = (x - 3)/2</p>
+
+    <h2>Mapa das Funções do Guia</h2>
+    <table>
+      <tr>
+        <th>Função</th>
+        <th>Lei</th>
+        <th>Gráfico</th>
+        <th>Variação</th>
+      </tr>
+      <tr>
+        <td>Afim</td>
+        <td>y = ax + b</td>
+        <td>reta</td>
+        <td>constante (a)</td>
+      </tr>
+      <tr>
+        <td>Quadrática</td>
+        <td>y = ax<sup>2</sup> + bx + c</td>
+        <td>parábola</td>
+        <td>muda no vértice</td>
+      </tr>
+      <tr>
+        <td>Exponencial</td>
+        <td>y = a<sup>x</sup></td>
+        <td>curva acima do eixo x</td>
+        <td>multiplicativa</td>
+      </tr>
+      <tr>
+        <td>Logarítmica</td>
+        <td>y = log<sub>a</sub> x</td>
+        <td>curva à direita do eixo y</td>
+        <td>inversa da exponencial</td>
+      </tr>
+    </table>
+
+    <h2>Função Afim</h2>
+    <p>f(x) = ax + b, com a e b reais e a &ne; 0</p>
+
+    <h2>Definição e Coeficientes</h2>
+    <p>Também chamada de função do 1º grau. Seu gráfico é sempre uma reta.</p>
+    
+    <h3>Coeficientes</h3>
+    <ul>
+      <li>a (coeficiente angular): taxa de variação — quanto y muda para cada 1 unidade de x. a = &Delta;y / &Delta;x</li>
+      <li>b (coeficiente linear): onde a reta corta o eixo y, no ponto (0, b)</li>
+    </ul>
+
+    <h3>Raiz</h3>
+    <p>f(x) = 0 &rArr; x = -b/a</p>
+    <ul>
+      <li>a &gt; 0: função crescente</li>
+      <li>a &lt; 0: função decrescente</li>
+      <li>b = 0: função linear (reta passa pela origem)</li>
+    </ul>
+
+    <h2>Estudo do Sinal</h2>
+    <table>
+      <tr>
+        <th></th>
+        <th>f(x) &gt; 0</th>
+        <th>f(x) = 0</th>
+        <th>f(x) &lt; 0</th>
+      </tr>
+      <tr>
+        <td>a &gt; 0</td>
+        <td>x &gt; -b/a</td>
+        <td>x = -b/a</td>
+        <td>x &lt; -b/a</td>
+      </tr>
+      <tr>
+        <td>a &lt; 0</td>
+        <td>x &lt; -b/a</td>
+        <td>x = -b/a</td>
+        <td>x &gt; -b/a</td>
+      </tr>
+    </table>
+    <p>O sinal de f é o de a à direita da raiz e o oposto dele à esquerda.</p>
+
+    <h2>Como Montar a Lei a partir de Dois Pontos</h2>
+    <p>A reta passa por (1, 3) e (3, 7).</p>
+    <ul>
+      <li>a = (7 - 3)/(3 - 1) = 2</li>
+      <li>Use um ponto: 3 = 2 &middot; 1 + b &rArr; b = 1</li>
+      <li>Lei: f(x) = 2x + 1</li>
+    </ul>
+
+    <h2>Aplicação Típica</h2>
+    <p>Custo de uma corrida: C(x) = 4 + 2,5x, em que 4 é a bandeirada (valor fixo = b) e 2,5 é o preço por km (taxa = a). Para 10 km: C = 4 + 25 = R$ 29.</p>
+
+    <h2>Função Quadrática</h2>
+    <p>f(x) = ax<sup>2</sup> + bx + c, com a &ne; 0</p>
+
+    <h2>Raízes e Discriminante</h2>
+    <p>Também chamada de função do 2º grau. Seu gráfico é uma parábola. As raízes vêm da fórmula de Bhaskara:</p>
+    <p>&Delta; = b<sup>2</sup> - 4ac &middot; x = (-b &plusmn; &radic;&Delta;) / 2a</p>
+    <table>
+      <tr>
+        <th>Discriminante</th>
+        <th>Raízes reais</th>
+        <th>Parábola</th>
+      </tr>
+      <tr>
+        <td>&Delta; &gt; 0</td>
+        <td>duas, distintas</td>
+        <td>corta o eixo x em 2 pontos</td>
+      </tr>
+      <tr>
+        <td>&Delta; = 0</td>
+        <td>uma só (dupla)</td>
+        <td>toca o eixo x no vértice</td>
+      </tr>
+      <tr>
+        <td>&Delta; &lt; 0</td>
+        <td>nenhuma</td>
+        <td>não toca o eixo x</td>
+      </tr>
+    </table>
+
+    <h2>Relações de Girard</h2>
+    <p>soma das raízes: x<sub>1</sub> + x<sub>2</sub> = -b/a &middot; produto: x<sub>1</sub> &middot; x<sub>2</sub> = c/a</p>
+
+    <h2>Vértice, Concavidade e Gráfico</h2>
+    <ul>
+      <li>a &gt; 0: concavidade para cima — o vértice é o ponto de mínimo</li>
+      <li>a &lt; 0: concavidade para baixo — o vértice é o ponto de máximo</li>
+      <li>c: a parábola corta o eixo y em (0, c)</li>
+    </ul>
+
+    <h3>Vértice</h3>
+    <p>x<sub>v</sub> = -b/2a &middot; y<sub>v</sub> = -&Delta;/4a</p>
+
+    <h3>Exemplo</h3>
+    <p>F(x) = x<sup>2</sup> - 4x + 3</p>
+    <ul>
+      <li>&Delta; = 16 - 12 = 4 &rarr; x = (4 &plusmn; 2)/2 &rarr; x = 1 ou x = 3</li>
+      <li>x<sub>v</sub> = 2 e y<sub>v</sub> = -4/4 = -1 &rarr; V(2, -1)</li>
+      <li>Im(f) = [-1, +&infin;)</li>
+    </ul>
+    <p>O eixo de simetria é a reta x = x<sub>v</sub>; as raízes ficam à mesma distância dele, por isso x<sub>v</sub> é a média das raízes.</p>
+
+    <h2>Problemas de Máximo e Mínimo</h2>
+    <p>Um agricultor tem 40 m de tela para cercar um canteiro retangular. Qual a área máxima?</p>
+    <ul>
+      <li>Lados x e 20 - x &rArr; A(x) = x(20 - x) = -x<sup>2</sup> + 20x</li>
+      <li>a &lt; 0, então há máximo em x<sub>v</sub> = -20/(-2) = 10</li>
+      <li>A<sub>máx</sub> = 10 &middot; 10 = 100 m<sup>2</sup> (um quadrado)</li>
+    </ul>
+
+    <h2>Função Exponencial</h2>
+    <p>A variável está no expoente: f(x) = a<sup>x</sup>, com a &gt; 0 e a &ne; 1</p>
+
+    <h2>Revisão de Potências</h2>
+    <ol>
+      <li>a<sup>m</sup> &middot; a<sup>n</sup> = a<sup>m+n</sup></li>
+      <li>a<sup>m</sup> &divide; a<sup>n</sup> = a<sup>m-n</sup></li>
+      <li>(a<sup>m</sup>)<sup>n</sup> = a<sup>m&middot;n</sup></li>
+      <li>(a &middot; b)<sup>n</sup> = a<sup>n</sup> &middot; b<sup>n</sup></li>
+      <li>a<sup>-n</sup> = 1/a<sup>n</sup></li>
+      <li>a<sup>m/n</sup> = <sup>n</sup>&radic;(a<sup>m</sup>) &middot; a<sup>0</sup> = 1</li>
+    </ol>
+
+    <h2>Gráfico e Propriedades</h2>
+    <ul>
+      <li>Domínio: R &middot; Imagem: R<sub>+</sub>* = (0, +&infin;)</li>
+      <li>O gráfico passa sempre por (0, 1), pois a<sup>0</sup> = 1</li>
+      <li>Nunca toca o eixo x: ele é assíntota horizontal</li>
+      <li>a &gt; 1: crescente (crescimento exponencial)</li>
+      <li>0 &lt; a &lt; 1: decrescente (decaimento exponencial)</li>
+      <li>É injetora: a<sup>x1</sup> = a<sup>x2</sup> &rArr; x<sub>1</sub> = x<sub>2</sub></li>
+    </ul>
+
+    <h2>Equações e Inequações Exponenciais</h2>
+    
+    <h2>Método: Igualar as Bases</h2>
+    <p>2<sup>x+1</sup> = 32 &rarr; 2<sup>x+1</sup> = 2<sup>5</sup> &rarr; x + 1 = 5 &rarr; x = 4</p>
+    <p>Em inequações, a desigualdade mantém o sentido se a &gt; 1 e inverte se 0 &lt; a &lt; 1.</p>
+    <p>(&frac12;)<sup>x</sup> &gt; &frac14; &rarr; (&frac12;)<sup>x</sup> &gt; (&frac12;)<sup>2</sup> &rarr; x &lt; 2 (base entre 0 e 1: inverte)</p>
+
+    <h2>Modelo de Crescimento</h2>
+    <p>Capital com juros compostos: M = C &middot; (1 + i)<sup>t</sup>. Uma população que dobra a cada hora: P(t) = P<sub>0</sub> &middot; 2<sup>t</sup>.</p>
+
+    <h2>Logaritmo e Função Logarítmica</h2>
+    <p>O expoente que procuramos: a operação inversa da exponenciação</p>
+
+    <h2>Definição e Condições de Existência</h2>
+    <p>log<sub>b</sub> a = x &hArr; a = b<sup>x</sup></p>
+    <p>Lê-se: "logaritmo de b na base a". Em log<sub>a</sub> b, a é a base e b o logaritmando.</p>
+    <ul>
+      <li>Condições: b &gt; 0, a &gt; 0 e a &ne; 1</li>
+      <li>log<sub>a</sub> 1 = 0 &middot; log<sub>a</sub> a = 1 &middot; log<sub>a</sub> a<sup>k</sup> = k</li>
+      <li>Base 10: log x (decimal) &middot; base e = 2,718: ln x (natural)</li>
+    </ul>
+    <p>log<sub>2</sub> 8 = 3, pois 2<sup>3</sup> = 8 &middot; log 1000 = 3 &middot; log<sub>3</sub> (1/9) = -2</p>
+
+    <h2>Propriedades Operatórias</h2>
+    <ol>
+      <li>Produto: log<sub>a</sub> (b &middot; c) = log<sub>a</sub> b + log<sub>a</sub> c</li>
+      <li>Quociente: log<sub>a</sub> (b/c) = log<sub>a</sub> b - log<sub>a</sub> c</li>
+      <li>Potência: log<sub>a</sub> b<sup>k</sup> = k &middot; log<sub>a</sub> b</li>
+      <li>Mudança de base: log<sub>a</sub> b = log<sub>c</sub> b / log<sub>c</sub> a</li>
+    </ol>
+    <p>Atenção: log (b + c) não é log b + log c. Não existe regra para o logaritmo de uma soma.</p>
+
+    <h2>Função Logarítmica</h2>
+    <p>f(x) = log<sub>a</sub> x, com a &gt; 0 e a &ne; 1. É a inversa da exponencial a<sup>x</sup>.</p>
+    <ul>
+      <li>Domínio: R<sub>+</sub>* &middot; Imagem: R</li>
+      <li>Passa sempre por (1, 0); o eixo y é assíntota vertical</li>
+      <li>a &gt; 1: crescente &middot; 0 &lt; a &lt; 1: decrescente</li>
+    </ul>
+
+    <h2>Domínio de f(x) = log(x - 2)</h2>
+    <p>x - 2 &gt; 0 &rArr; x &gt; 2 &rArr; D = {x &in; R | x &gt; 2}</p>
+
+    <h2>Equação Logarítmica</h2>
+    <p>log<sub>2</sub> (x + 1) = 3 &rArr; x + 1 = 2<sup>3</sup> &rArr; x = 7 (confira: x + 1 = 8 &gt; 0)</p>
+
+    <h2>Resumo Comparativo e Erros Comuns</h2>
+    <p>Para revisar antes da prova</p>
+
+    <h2>Quadro-Resumo das Funções</h2>
+    <table>
+      <tr>
+        <th></th>
+        <th>Afim</th>
+        <th>Quadrática</th>
+        <th>Exponencial</th>
+        <th>Logarítmica</th>
+      </tr>
+      <tr>
+        <td>Lei</td>
+        <td>ax + b</td>
+        <td>ax<sup>2</sup> + bx + c</td>
+        <td>a<sup>x</sup></td>
+        <td>log<sub>a</sub> x</td>
+      </tr>
+      <tr>
+        <td>Gráfico</td>
+        <td>reta</td>
+        <td>parábola</td>
+        <td>curva exponencial</td>
+        <td>curva logarítmica</td>
+      </tr>
+      <tr>
+        <td>Domínio</td>
+        <td>R</td>
+        <td>R</td>
+        <td>R</td>
+        <td>R<sub>+</sub>*</td>
+      </tr>
+      <tr>
+        <td>Imagem</td>
+        <td>R</td>
+        <td>[y<sub>v</sub>, +&infin;) se a &gt; 0<br>(-&infin;, y<sub>v</sub>] se a &lt; 0</td>
+        <td>R<sub>+</sub>*</td>
+        <td>R</td>
+      </tr>
+      <tr>
+        <td>Ponto fixo</td>
+        <td>(0, b)</td>
+        <td>(0, c) e vértice</td>
+        <td>(0, 1)</td>
+        <td>(1, 0)</td>
+      </tr>
+      <tr>
+        <td>Crescente se</td>
+        <td>a &gt; 0</td>
+        <td>depende do lado do vértice</td>
+        <td>a &gt; 1</td>
+        <td>a &gt; 1</td>
+      </tr>
+      <tr>
+        <td>Raízes</td>
+        <td>-b/a</td>
+        <td>Bhaskara (0, 1 ou 2)</td>
+        <td>nenhuma</td>
+        <td>x = 1</td>
+      </tr>
+    </table>
+
+    <h2>Erros Comuns</h2>
+    <ol>
+      <li>Confundir &in; (elemento) com &sub; (conjunto).</li>
+      <li>Esquecer o universo ao calcular o complementar.</li>
+      <li>Em Bhaskara, errar o sinal de b ou de -4ac quando c ou a são negativos.</li>
+      <li>Esquecer que a quadrática tem vértice: valor máximo/mínimo não está nas raízes.</li>
+      <li>Pensar que a<sup>x</sup> pode ser negativa: a<sup>x</sup> &gt; 0 sempre.</li>
+      <li>Não verificar a condição de existência (logaritmando &gt; 0) ao resolver equação logarítmica.</li>
+      <li>Não inverter a desigualdade com base entre 0 e 1.</li>
+      <li>Usar log (b + c) = log b + log c — essa regra não existe.</li>
+    </ol>
+
+    <h2>Checklist de Estudo</h2>
+    <ul>
+      <li>Sei representar conjuntos e calcular união, interseção, diferença e complementar.</li>
+      <li>Sei passar entre intervalo, desigualdade e reta numérica.</li>
+      <li>Sei montar a lei de uma função afim por dois pontos.</li>
+      <li>Sei achar raízes, vértice e valor máximo/mínimo de uma quadrática.</li>
+      <li>Sei igualar bases em equações exponenciais.</li>
+      <li>Sei aplicar as propriedades de logaritmo e conferir a condição de existência.</li>
+    </ul>
+
+    <p id="go_back"><a href="1anoEM.html">Voltar à página geral</a></p>
+
+    <div id="footer-placeholder"></div>
+
+  </div>
+
+  <script src="return-to-section.js"></script>
+  <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+  </script>
+</body>
+</html>
